@@ -5,6 +5,11 @@
 @import "buttons";
 @import "animation";
 
+.container{
+  width:100%;
+  margin:0 auto;
+}
+
 // Navbar
 .nav__container {
   background: white;
@@ -65,6 +70,58 @@
   color:white;
   padding:15px 25px;
   font-size:15px;
+}
+
+// Header
+.header {
+  font-family: $primary_font;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background:url("/headerBg.png")
+}
+
+.header__container{
+  text-align:center;
+}
+
+.header__container > h1{
+  font-family:$primary_font;
+  font-weight:700;
+  color:white;
+  font-size:80px;
+  letter-spacing:-1px;  
+  width:70%;
+  margin:0 auto;
+  letter-spacing:-3px;
+}
+
+.header__container > div {
+  padding-top:50px;
+}
+
+.header__white__btn{
+  background:white;
+  padding:20px 40px;
+  color:black;
+  font-weight:600;
+  border-radius:3px;
+  margin-right:20px;
+  box-shadow:0px 0px 20px rgba(0,0,0,0.1);
+  font-size:15px;
+}
+
+.header__red__btn{
+  background:rgb(250, 0, 30);
+  padding:20px 40px;
+  color:white;
+  font-weight:600;
+  border-radius:3px;
+  box-shadow:0px 0px 20px rgba(0,0,0,0.1);
+  font-size:15px;
+
 }
 
 // ------------- Code --------------

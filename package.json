@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "format": "prettier --write \"{,!(.next)/**/}*.{js, jsx}\"",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"

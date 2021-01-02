@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-import {BsChevronRight} from 'react-icons/bs'
+import { BsChevronRight } from 'react-icons/bs'
 
 import "../styles/style.scss"
 
@@ -27,10 +27,10 @@ const Navbar = () => {
            <Link href="/gallery">
             <a className="nav__link">Gallery</a>
            </Link>
-           <Link href="/contact-us">
+           <Link href="/contactus">
             <a className="nav__link">Contact Us</a>
            </Link>
-           <Link href="/get-a-quote">
+           <Link href="/getaquote">
              <a 
              className="nav__link button__red">Get a Quote</a>
            </Link>
