@@ -1,4 +1,3 @@
-import React from 'react';
 import Link from 'next/link';
 
 import { FiTwitter, FiFacebook, FiYoutube } from 'react-icons/fi';
