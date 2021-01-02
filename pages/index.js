@@ -1,8 +1,8 @@
 import Head from 'next/head';
 
-import Footer from '../components/Footer.js';
-import Navbar from '../components/Navbar.js';
-import Header from '../components/Header.js';
+import Footer from './footer.js';
+import Navbar from './navbar.js';
+import Header from './header.js';
 
 import '../styles/style.scss';
 
