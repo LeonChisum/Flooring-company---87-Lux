@@ -1,4 +1,6 @@
-import Head from 'next/head'
+import Head from 'next/head';
+
+import Footer from '../components/Footer.js';
 
 import Navbar from '../components/Navbar.js'
 import Header from '../components/Header.js'
@@ -12,6 +14,7 @@ export default function Home() {
       <div className="container">
         <Header/>
       </div>
+      <Footer />
     </div>
   )
 }
