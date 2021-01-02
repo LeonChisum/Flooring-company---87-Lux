@@ -1,7 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 
-import { BsChevronRight } from 'react-icons/bs';
+import { FiTwitter, FiFacebook, FiYoutube } from 'react-icons/fi';
+import { AiOutlineInstagram } from 'react-icons/ai';
 
 import '../styles/style.scss';
 
@@ -60,7 +61,23 @@ const Footer = () => {
 					</div>
 				</div>
 			</div>
-			<div className='footer__copyright-section'></div>
+			<div className='footer__copyright-section'>
+				<small>2020 &copy; All Rights Reserved</small>
+				<div className='footer__icons'>
+					<div className='icon'>
+						<FiTwitter />
+					</div>
+					<div className='icon'>
+						<AiOutlineInstagram />
+					</div>
+					<div className='icon'>
+						<FiFacebook />
+					</div>
+					<div className='icon'>
+						<FiYoutube />
+					</div>
+				</div>
+			</div>
 		</div>
 	);
 };
