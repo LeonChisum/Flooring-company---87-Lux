@@ -1,17 +1,13 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
-import Navbar from '../components/Navbar.js'
-import Header from '../components/Header.js'
+import Header from './header.js';
 
-import "../styles/style.scss"
+import '../styles/style.scss';
 
-export default function Home() {
-  return (
-    <div>
-      <Navbar/>
-      <div className="container">
-        <Header/>
-      </div>
-    </div>
-  )
+export default function Home(props) {
+	return (
+		<div>
+			<Header />
+		</div>
+	);
 }
