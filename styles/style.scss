@@ -403,41 +403,55 @@
 	width:330%;
 	height: 400px;
 	text-align: inherit;
- 
+}
 
-  .lux {
-    margin-left: 15px;
-  }
+  
 
 .secondp {
-  margin-right: 40px;
-}
+  text-align: inherit;
+  width: 10%;
+
+  font-size: 15px;
+  margin-left: 590px;
+  font-size: 15px; 
+  margin-right: 15px;
+  line-height: 1.7rem;
+	width:330%;
+	height: 400px;
+  text-align: inherit;
+  display: inline-block;
+  position: relative;
+  bottom: 200px;
   
+  
+}
+
+.lux{
+  display: flex;
+	justify-content: center;
+	margin-right: 50px;
+	margin-top: 5%;
+}
+
+
+
 	
   .squarepic {
-    display: flex; 
+    /*display: flex; 
     align-items: flex-start; 
-	justify-content: flex-start;
+  justify-content: flex-start;
+  */
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
    
   }
 
-}
+
 
 
 .firstp2 {
-  
-  padding: 20px 40px 40px;
-  max-width: 640px;
-  display: flex;
-  &__image {
-    margin: 20px 30px 0 0;
-    width: 200px;
-    object-fit: contain;
-    align-self: flex-start;
-  }
-  &__text {
-    flex: 1 1 auto;
-  }
+  float: left;
 }
 
 
