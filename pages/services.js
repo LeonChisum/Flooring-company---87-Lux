@@ -46,8 +46,8 @@ const Services = () => {
 			<p>Luxury vinyl is one of the most durable flooring options out there. it can</p>
 			<p>withstand water and moisture, as well as wear and tear. It is also stain and</p>
 			<p>scratch resistant. This durability makes it an ideal flooring option.</p>		
-
-			
+            <br></br>
+			<p>Book service</p>
 			<br></br>
 		</div>
 		</div>
