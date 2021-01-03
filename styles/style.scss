@@ -139,7 +139,7 @@
 			font-style: normal;
 			font-weight: 600;
 			font-size: 49px;
-			padding: 100px 0 40px 0;
+			padding: 22% 0 40px 0;
 			line-height: 132.19%;
 			/* or 65px */
 			letter-spacing: -0.025em;
@@ -159,6 +159,7 @@
 
 	&__form-section {
 		margin-top: 86px;
+		margin-bottom: 10%;
 		position: relative;
 		width: 822px;
 		box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.048);
@@ -172,6 +173,7 @@
 		padding-top: 30px;
 
 		h2 {
+			letter-spacing: -1px;
 			font-style: normal;
 			font-weight: 600;
 			font-size: 45px;
@@ -186,6 +188,57 @@
 			/* or 42px */
 			color: #5f5f5f;
 		}
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		padding-top: 20px;
+
+		input,
+		textarea,
+		button {
+			padding: 20px;
+			margin: 8px 0;
+			border-radius: 5px;
+
+			@include placeholder(#c7c2c2, 23px);
+		}
+
+		input {
+			width: 100%;
+			height: 103px;
+			border: 1px solid #e3e3e3;
+		}
+
+		textarea {
+			height: 150px;
+			border: 1px solid #e3e3e3;
+		}
+
+		button {
+			background: $primary-color;
+			height: 103px;
+			color: #ffffff;
+			font-size: 34px;
+			letter-spacing: 0.025em;
+			border: none;
+			margin: 35px 0;
+		}
+	}
+}
+
+.faq {
+	text-align: center;
+
+	h1 {
+		color: $secondary-color;
+		font-family: Avenir Next;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 68px;
+		line-height: 211.69%;
+		/* identical to box height, or 144px */
 	}
 }
 
