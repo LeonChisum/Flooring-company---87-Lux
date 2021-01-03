@@ -382,7 +382,7 @@
 .services {
 	display: flex;
 	justify-content: center;
-	margin-left: 10%;
+	margin-right: 50px;
 	margin-top: 5%;
 }
 
@@ -394,7 +394,6 @@
  
   text-align: inherit;
   width: 10%;
-<<<<<<< HEAD
 
   font-size: 15px;
   margin-left: 590px;
@@ -404,6 +403,15 @@
 	width:330%;
 	height: 400px;
 	text-align: inherit;
+ 
+
+  .lux {
+    margin-left: 15px;
+  }
+
+.secondp {
+  margin-right: 40px;
+}
   
 	
   .squarepic {
@@ -430,19 +438,6 @@
   &__text {
     flex: 1 1 auto;
   }
-=======
-  */
-	font-size: 15px;
-	margin-left: 590px;
-	font-size: 15px;
-	margin-right: 15px;
-	line-height: 1.7rem;
-
-	width: 330%;
-	height: 400px;
-
-	text-align: inherit;
->>>>>>> 90e6dc193924ad757df9e3e501ba3295e7f09294
 }
 
 
