@@ -292,6 +292,10 @@
 		border-radius: 5px;
 
 		display: none;
+
+		&:nth-child(2) {
+			display: block;
+		}
 	}
 }
 
