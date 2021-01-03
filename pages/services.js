@@ -19,7 +19,7 @@ const Services = () => {
 			</div>
 		
 			
-			<img src='./square.png'/>
+			
 			
 		
 			
