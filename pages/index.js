@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import Header from './header.js';
+import Header from '../components/header';
 
 import '../styles/style.scss';
 
