@@ -1,5 +1,5 @@
-import Footer from './footer.js';
-import Navbar from './navbar.js';
+import Footer from '../components/footer';
+import Navbar from '../components/navbar';
 
 import '../styles/style.scss';
 
