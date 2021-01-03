@@ -15,6 +15,9 @@ const Services = () => {
 			<p>we offer a wide range of flooring services, and high quality installation services at affordable</p> 
 			
 			<p>prices.The wide of services we offer help our customers get what they need, at the highest</p>
+			<p className="twowords">quality possible</p>
+			
+			
 			<br></br>
 		</div>
 		</div>

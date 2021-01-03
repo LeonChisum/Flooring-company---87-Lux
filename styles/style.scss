@@ -396,9 +396,9 @@
   width: 10%;
 
   font-size: 15px;
-  margin-left: 590px;
+  /*margin-left: 590px; */
   font-size: 15px; 
-  margin-right: 15px;
+  margin-left: 410px;
   line-height: 1.7rem;
 	width:330%;
 	height: 400px;
@@ -416,7 +416,7 @@
   font-size: 15px; 
   margin-right: 15px;
   line-height: 1.7rem;
-	width:330%;
+	width: 90%;
 	height: 400px;
   text-align: inherit;
   display: inline-block;
@@ -430,7 +430,8 @@
   display: flex;
 	justify-content: center;
 	margin-right: 50px;
-	margin-top: 5%;
+  
+  line-height: 1.0em;
 }
 
 
@@ -454,7 +455,9 @@
   float: left;
 }
 
-
+.twowords{
+  margin-left: 270px;
+}
 
 // ------------- Code --------------
 
