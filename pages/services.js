@@ -4,10 +4,10 @@ const Services = () => {
 	return (
 		<div>
 		<div className="services">
-	
+	</div>
 			<h1>Services we offer</h1>
 		
-			</div>
+			<div>
 			<br></br>
 			
 			<div className="firstp">
@@ -17,17 +17,35 @@ const Services = () => {
 			<p>prices.The wide of services we offer help our customers get what they need, at the highest</p>
 			<br></br>
 			</div>
-			<div>
-			</div>
-
-	        <div className="firstp">
+		
+			
+			<img src='./square.png'/>
+			
+		
+			
+			
+		
 			<h1>Luxury Vinyl</h1>
+			
+			
+			
 			<p>Luxury vinyl is one of the most durable flooring options out there. it can</p> 
 			<p>withstand water and moisture, as well as wear and tear. It is also stain and</p>
 			<p>scratch resistant. This durability makes it an ideal flooring option.</p>
-             </div>
+			</div>
+			</div>
 			
-		</div>
+			
+			
+			
+			
+			
+			
+			
+            
+			 
+		
+		
 
 	);
 };

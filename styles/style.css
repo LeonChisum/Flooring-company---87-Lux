@@ -622,9 +622,9 @@ a {
 .firstp {
   /*display: flex;
  justify-content: center;
+ */
   text-align: inherit;
   width: 10%;
-  */
   font-size: 15px;
   margin-left: 590px;
   font-size: 15px;
@@ -633,5 +633,40 @@ a {
   width: 330%;
   height: 400px;
   text-align: inherit;
+}
+
+.firstp .squarepic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.firstp2 {
+  padding: 20px 40px 40px;
+  max-width: 640px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.firstp2__image {
+  margin: 20px 30px 0 0;
+  width: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.firstp2__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 /*# sourceMappingURL=style.css.map */
