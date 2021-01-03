@@ -1,5 +1,7 @@
 import '../styles/style.scss';
 
+import { BsPlus } from 'react-icons/bs';
+
 const Contact = () => {
 	return (
 		<div>
@@ -28,7 +30,41 @@ const Contact = () => {
 			</div>
 			<section className='faq'>
 				<h1>Frequently Asked Questions (FAQ)</h1>
-				<div></div>
+				<div className='faq__container'>
+					<div className='faq__questions-container'>
+						<div className='faq__questions'>
+							<h1>How does your pricing work?</h1>
+							<BsPlus />
+						</div>
+						<p className='faq__answers'>
+							It depends on the type of Floor we install. For example, a Hardwood installation takes 2
+							days on Average. Get a Quote to know the approximate amount of time we take to finish the
+							Floor installation.
+						</p>
+					</div>
+					<div className='faq__questions-container'>
+						<div className='faq__questions'>
+							<h1>How much time does it take to finish installing a Floor?</h1>
+							<BsPlus />
+						</div>
+						<p className='faq__answers'>
+							It depends on the type of Floor we install. For example, a Hardwood installation takes 2
+							days on Average. Get a Quote to know the approximate amount of time we take to finish the
+							Floor installation.
+						</p>
+					</div>
+					<div className='faq__questions-container'>
+						<div className='faq__questions'>
+							<h1>Do you provide After-sales service?</h1>
+							<BsPlus />
+						</div>
+						<p className='faq__answers'>
+							It depends on the type of Floor we install. For example, a Hardwood installation takes 2
+							days on Average. Get a Quote to know the approximate amount of time we take to finish the
+							Floor installation.
+						</p>
+					</div>
+				</div>
 			</section>
 		</div>
 	);
