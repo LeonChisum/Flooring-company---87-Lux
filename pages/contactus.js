@@ -1,6 +1,7 @@
 import '../styles/style.scss';
 
 import { BsPlus } from 'react-icons/bs';
+import { BiMinus } from 'react-icons/bi';
 
 const Contact = () => {
 	return (
@@ -45,7 +46,7 @@ const Contact = () => {
 					<div className='faq__questions-container'>
 						<div className='faq__questions'>
 							<h1>How much time does it take to finish installing a Floor?</h1>
-							<BsPlus />
+							<BiMinus />
 						</div>
 						<p className='faq__answers'>
 							It depends on the type of Floor we install. For example, a Hardwood installation takes 2
