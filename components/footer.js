@@ -51,7 +51,7 @@ const Footer = () => {
 						<Link href='/careers'>
 							<a className='footer__link'>Careers</a>
 						</Link>
-						<Link href='/contact-us'>
+						<Link href='/contactus'>
 							<a className='footer__link'>Contact Us</a>
 						</Link>
 						<Link href='/best-worker-award'>
