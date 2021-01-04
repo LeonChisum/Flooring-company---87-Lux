@@ -378,7 +378,18 @@
 	}
 }
 
-// styles page
+
+
+
+
+
+
+
+
+
+
+
+// services page code
 .services {
 	display: flex;
 	justify-content: center;
@@ -426,7 +437,7 @@
   
 }
 
-.lux{
+.lux {
   display: flex;
 	/*justify-content: center; */
 	margin-right: 100px;
@@ -435,6 +446,7 @@
   font-size: 20px;
   margin-top: -40px;
   font-size: 3em;
+  
 }
 
 
@@ -483,8 +495,12 @@
 
 
 .bookservice{
-  text-decoration: underline;
-  color: black;
+  margin-top: 3%;
+  
+}
+
+.bookservice2{
+	color:black;
 }
 
 

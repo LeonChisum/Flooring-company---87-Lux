@@ -924,7 +924,10 @@ a {
 }
 
 .bookservice {
-  text-decoration: underline;
+  margin-top: 3%;
+}
+
+.bookservice2 {
   color: black;
 }
 /*# sourceMappingURL=style.css.map */
