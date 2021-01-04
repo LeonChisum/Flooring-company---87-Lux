@@ -34,7 +34,7 @@ const Services = () => {
 		<div>
 		<div className="lux">
 		
-			<h1>Luxury Vinyl</h1>
+			
 			
 		</div>
 			<div>
@@ -42,12 +42,12 @@ const Services = () => {
 			<img className="squarepic"src='./square.png' />
 			
 			<div className="secondp">
-			
+			<h1 className="lux">Luxury Vinyl</h1>
 			<p>Luxury vinyl is one of the most durable flooring options out there. it can</p>
 			<p>withstand water and moisture, as well as wear and tear. It is also stain and</p>
 			<p>scratch resistant. This durability makes it an ideal flooring option.</p>		
             <br></br>
-			<p>Book service</p>
+			<a className="bookservice"href="/contactus">Book Service</a>
 			<br></br>
 		</div>
 		</div>

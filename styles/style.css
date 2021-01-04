@@ -859,13 +859,12 @@ a {
 
 .secondp {
   text-align: inherit;
-  width: 10%;
   font-size: 15px;
   margin-left: 590px;
   font-size: 15px;
   margin-right: 15px;
   line-height: 1.7rem;
-  width: 90%;
+  /*width: 90%; */
   height: 400px;
   text-align: inherit;
   display: inline-block;
@@ -877,12 +876,12 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-right: 50px;
+  /*justify-content: center; */
+  margin-right: 100px;
   line-height: 1.0em;
   font-size: 20px;
+  margin-top: -40px;
+  font-size: 3em;
 }
 
 .squarepic {
@@ -899,6 +898,7 @@ a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  margin-top: -300px;
 }
 
 .firstp2 {
@@ -921,5 +921,10 @@ a {
   text-align: inherit;
   margin-top: -330px;
   margin-left: 80px;
+}
+
+.bookservice {
+  text-decoration: underline;
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */
