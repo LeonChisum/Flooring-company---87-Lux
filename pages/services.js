@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import '../styles/style.scss';
+import { BsChevronRight } from 'react-icons/bs';
 
 const Services = () => {
 	return (
@@ -32,7 +33,8 @@ const Services = () => {
 			
 			
 		<div>
-		<div className="lux">
+		<div>
+		
 		
 			
 			
@@ -43,11 +45,15 @@ const Services = () => {
 			
 			<div className="secondp">
 			<h1 className="lux">Luxury Vinyl</h1>
+			<br></br>
 			<p>Luxury vinyl is one of the most durable flooring options out there. it can</p>
 			<p>withstand water and moisture, as well as wear and tear. It is also stain and</p>
 			<p>scratch resistant. This durability makes it an ideal flooring option.</p>		
             <br></br>
-			<a className="bookservice"href="/contactus">Book Service</a>
+			
+			<a className="bookservice2" href="/contactus">Book Service</a><BsChevronRight className="bookservice"/>
+
+		    
 			<br></br>
 		</div>
 		</div>
