@@ -132,14 +132,14 @@
 	margin: 0 auto;
 
 	&__hero-section {
-		width: 740px;
+		width: 45%;
 
 		h1 {
 			color: $secondary-color;
 			font-style: normal;
 			font-weight: 600;
-			font-size: 49px;
-			padding: 22% 0 40px 0;
+			font-size: 2rem;
+			padding: 25% 0 40px 0;
 			line-height: 132.19%;
 			/* or 65px */
 			letter-spacing: -0.025em;
@@ -148,10 +148,9 @@
 
 		p {
 			font-family: Inter;
-			font-size: 25px;
 			font-style: normal;
 			font-weight: 500;
-			line-height: 53px;
+			line-height: 35px;
 			letter-spacing: 0em;
 			text-align: left;
 		}
@@ -160,30 +159,29 @@
 	&__form-section {
 		margin-top: 86px;
 		margin-bottom: 10%;
+		// width: 650px;
 		position: relative;
-		width: 822px;
 		box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.048);
 	}
 
 	&__form-section-container {
-		padding: 0 53px;
+		padding: 0 30px;
 	}
 
 	&__form-section-header {
-		padding-top: 30px;
+		padding-top: 15px;
 
 		h2 {
 			letter-spacing: -1px;
 			font-style: normal;
 			font-weight: 600;
-			font-size: 45px;
+			font-size: 2rem;
 			line-height: 211.69%;
 		}
 
 		p {
 			font-style: normal;
 			font-weight: 500;
-			font-size: 23px;
 			line-height: 184.69%;
 			/* or 42px */
 			color: #5f5f5f;
@@ -202,12 +200,11 @@
 			margin: 8px 0;
 			border-radius: 5px;
 
-			@include placeholder(#c7c2c2, 23px);
+			@include placeholder(#c7c2c2, 13px);
 		}
 
 		input {
 			width: 100%;
-			height: 103px;
 			border: 1px solid #e3e3e3;
 		}
 
@@ -218,9 +215,7 @@
 
 		button {
 			background: $primary-color;
-			height: 103px;
 			color: #ffffff;
-			font-size: 34px;
 			letter-spacing: 0.025em;
 			border: none;
 			margin: 35px 0;
@@ -236,7 +231,7 @@
 		font-family: $primary_font;
 		font-style: normal;
 		font-weight: 600;
-		font-size: 68px;
+		font-size: 2.5rem;
 		letter-spacing: -0.025em;
 		line-height: 211.69%;
 		/* identical to box height, or 144px */
@@ -244,11 +239,11 @@
 
 	&__container {
 		display: flex;
-		width: 1096px;
+		width: 50%;
 		margin: 0 auto;
 		flex-direction: column;
 		justify-content: space-between;
-		padding: 100px 0 200px 0;
+		padding: 70px 0 200px 0;
 	}
 
 	&__questions-container {
@@ -256,8 +251,8 @@
 	}
 
 	&__questions {
-		height: 125px;
-		padding: 0 40px;
+		cursor: pointer;
+		padding: 20px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -270,10 +265,14 @@
 			font-family: $primary_font;
 			font-style: normal;
 			font-weight: 500;
-			font-size: 27px;
+			font-size: 1rem;
 			line-height: 211.69%;
 			/* or 57px */
 			color: $secondary-color;
+		}
+
+		&__icon {
+			color: #b9b3b3;
 		}
 	}
 
@@ -281,21 +280,19 @@
 		font-family: $primary_font;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 26px;
+		font-size: 1rem;
 		line-height: 211.69%;
 		/* or 55px */
 		color: #919191;
-		padding: 40px;
+		text-align: left;
+		padding: 30px 35px;
 		background: #ffffff;
 		border: 1px solid #c7c7c7;
 		box-sizing: border-box;
 		border-radius: 5px;
 
 		display: none;
-
-		&:nth-child(2) {
-			display: block;
-		}
+		transition: all 0.3s ease-in-out;
 	}
 }
 
@@ -390,62 +387,40 @@
 	/*display: flex;
  justify-content: center;
  */
- 
- 
-  text-align: inherit;
-  width: 10%;
-<<<<<<< HEAD
 
-  font-size: 15px;
-  margin-left: 590px;
-  font-size: 15px; 
-  margin-right: 15px;
-  line-height: 1.7rem;
-	width:330%;
-	height: 400px;
 	text-align: inherit;
-  
-	
-  .squarepic {
-    display: flex; 
-    align-items: flex-start; 
-	justify-content: flex-start;
-   
-  }
+	width: 10%;
 
-}
-
-
-.firstp2 {
-  
-  padding: 20px 40px 40px;
-  max-width: 640px;
-  display: flex;
-  &__image {
-    margin: 20px 30px 0 0;
-    width: 200px;
-    object-fit: contain;
-    align-self: flex-start;
-  }
-  &__text {
-    flex: 1 1 auto;
-  }
-=======
-  */
 	font-size: 15px;
 	margin-left: 590px;
 	font-size: 15px;
 	margin-right: 15px;
 	line-height: 1.7rem;
-
 	width: 330%;
 	height: 400px;
-
 	text-align: inherit;
->>>>>>> 90e6dc193924ad757df9e3e501ba3295e7f09294
+
+	.squarepic {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
 }
 
-
+.firstp2 {
+	padding: 20px 40px 40px;
+	max-width: 640px;
+	display: flex;
+	&__image {
+		margin: 20px 30px 0 0;
+		width: 200px;
+		object-fit: contain;
+		align-self: flex-start;
+	}
+	&__text {
+		flex: 1 1 auto;
+	}
+}
 
 // ------------- Code --------------
 
