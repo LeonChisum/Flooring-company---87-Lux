@@ -1,10 +1,71 @@
 import '../styles/style.scss';
+import { useState } from 'react';
 
 import { BsPlus } from 'react-icons/bs';
 import { BiMinus } from 'react-icons/bi';
 import { IconContext } from 'react-icons';
 
 const Contact = () => {
+	const [newContact, setNewContact] = useState({
+		name: '',
+		email: '',
+		message: '',
+	});
+
+	const [status, setStatus] = useState({
+		submitted: false,
+		submitting: false,
+		info: { error: false, msg: null },
+	});
+
+	const handleChange = (e) => {
+		setNewContact({
+			...newContact,
+			[e.target.name]: e.target.value,
+		});
+		setStatus({
+			submitted: false,
+			submitting: false,
+			info: { error: false, msg: null },
+		});
+	};
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		setStatus((prevStatus) => ({ ...prevStatus, submitting: true }));
+		fetch('/api/send', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify(newContact),
+		})
+			.then((res) => {
+				const txt = res.text();
+				handleResponse(res.status, txt);
+			})
+			.catch((err) => console.log('Contact ERROR', err));
+	};
+
+	const handleResponse = (status, msg) => {
+		if (status === 200) {
+			setStatus({
+				submitted: true,
+				submitting: false,
+				info: { error: false, msg: msg },
+			});
+			setNewContact({
+				name: '',
+				email: '',
+				message: '',
+			});
+		} else {
+			setStatus({
+				info: { error: true, msg: msg },
+			});
+		}
+	};
+
 	function showHideDiv(id) {
 		var e = document.getElementById(id);
 		if (e.style.display == null || e.style.display == 'none') {
@@ -30,11 +91,21 @@ const Contact = () => {
 							<h2>Contact Us</h2>
 							<p>Please send us your questions, please don’t spam us!</p>
 						</div>
-						<form className='contact__form' name='Alexis Flooring Contact Inqueries' method='post'>
-							<input type='text' name='name' placeholder='Name'></input>
-							<input type='email' name='email' placeholder='Email'></input>
-							<textarea type='text' name='message' placeholder='Message'></textarea>
-							<button type='submit'>Submit</button>
+						<form
+							className='contact__form'
+							name='Alexis Flooring Contact Inqueries'
+							method='post'
+							onSubmit={handleSubmit}>
+							<input type='text' name='name' placeholder='Name' onChange={handleChange}></input>
+							<input type='email' name='email' placeholder='Email' onChange={handleChange}></input>
+							<textarea
+								type='text'
+								name='message'
+								placeholder='Message'
+								onChange={handleChange}></textarea>
+							<button type='submit' onClick={handleSubmit}>
+								Submit
+							</button>
 						</form>
 					</div>
 				</div>
@@ -43,7 +114,10 @@ const Contact = () => {
 				<h1>Frequently Asked Questions (FAQ)</h1>
 				<div className='faq__container'>
 					<div className='faq__questions-container'>
-						<div className='faq__questions' onClick={() => showHideDiv('answer1')}>
+						<div
+							className='faq__questions'
+							onClick={() => showHideDiv('answer1')}
+							onClick={() => toggleClassName()}>
 							<h1>How does your pricing work?</h1>
 							<IconContext.Provider value={{ color: '#B9B3B3' }}>
 								<div>
