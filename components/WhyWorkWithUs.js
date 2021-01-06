@@ -12,7 +12,7 @@ const WhyWorkWithUs = () => {
         </div>
         <div className="branches">
           <h1 className="red__number">3+</h1>
-          <p>Satisfied Customers</p>
+          <p>Active Branches</p>
         </div>
         <div className="years__of__excellence">
           <h1 className="red__number">20+</h1>
