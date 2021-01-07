@@ -114,10 +114,7 @@ const Contact = () => {
 				<h1>Frequently Asked Questions (FAQ)</h1>
 				<div className='faq__container'>
 					<div className='faq__questions-container'>
-						<div
-							className='faq__questions'
-							onClick={() => showHideDiv('answer1')}
-							onClick={() => toggleClassName()}>
+						<div className='faq__questions' onClick={() => showHideDiv('answer1')}>
 							<h1>How does your pricing work?</h1>
 							<IconContext.Provider value={{ color: '#B9B3B3' }}>
 								<div>

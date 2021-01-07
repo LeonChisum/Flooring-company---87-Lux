@@ -297,8 +297,8 @@
 	}
 }
 
-// Why work with us 
-.why__work__with__us{
+// Why work with us
+.why__work__with__us {
 	height: 60vh;
 	display: flex;
 	flex-direction: column;
@@ -307,28 +307,28 @@
 	margin-bottom: 40px;
 	margin: 70px 0;
 
-	&>h3{
+	& > h3 {
 		font-size: 38px;
 	}
 
-	&>hr{
+	& > hr {
 		width: 100px;
 		margin: 20px 0;
-		border:1px solid rgb(250, 0, 30);
+		border: 1px solid rgb(250, 0, 30);
 	}
 
-	&>.company__info{
+	& > .company__info {
 		width: 100%;
 		display: flex;
 		justify-content: space-evenly;
 		margin: 40px 0;
 
-		&>div{
-			&>h1{
+		& > div {
+			& > h1 {
 				font-size: 70px;
 				color: rgb(250, 0, 30);
 			}
-			&>p{
+			& > p {
 				font-size: 25px;
 				font-weight: 700;
 				margin-top: 10px;
@@ -338,7 +338,7 @@
 }
 
 // Services we offer
-.services__we__offer{
+.services__we__offer {
 	align-items: center;
 	width: 90%;
 	margin: 0 auto;
@@ -346,49 +346,48 @@
 	flex-direction: column;
 	margin-bottom: 40px;
 
-	&>.services__header{
+	& > .services__header {
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
 
-		h2{
+		h2 {
 			font-size: 33px;
 		}
 
-		h4{
+		h4 {
 			width: 50%;
 			font-weight: 400;
 			font-size: 14px;
 			line-height: 24px;
-			border-left: 2px solid 
-			rgb(250, 0, 30);
+			border-left: 2px solid rgb(250, 0, 30);
 			padding-left: 25px;
 		}
 	}
 
-	&>.service{
+	& > .service {
 		width: 90%;
 		margin: 0 auto;
 		padding: 50px 0;
-		img{
-			width:45%;
+		img {
+			width: 45%;
 			margin: 0;
 		}
 		display: flex;
 		align-items: center;
 
-		&>.service__content{
-			padding:0 30px;
-			h2{
+		& > .service__content {
+			padding: 0 30px;
+			h2 {
 				font-size: 30px;
 			}
-			p{
+			p {
 				font-size: 14px;
 				line-height: 28px;
 				padding: 15px 0;
 			}
 
-			&>a{
+			& > a {
 				background: rgb(250, 0, 30);
 				color: white;
 				padding: 15px 25px;
@@ -400,7 +399,7 @@
 	}
 }
 
-.testomonials{
+.testomonials {
 	// height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -409,7 +408,7 @@
 	margin: 70px 0;
 	position: relative;
 
-	.red__box{
+	.red__box {
 		height: 450px;
 		width: 450px;
 		bottom: 10%;
@@ -419,37 +418,34 @@
 		z-index: -1;
 	}
 
-	.testomonials__header{
-
-		&>h1{
+	.testomonials__header {
+		& > h1 {
 			font-size: 38px;
 		}
-	
-		&>hr{
+
+		& > hr {
 			width: 100px;
 			margin: 20px auto;
-			border:1px solid rgb(250, 0, 30);
+			border: 1px solid rgb(250, 0, 30);
 		}
-	
 	}
 
-
-	.all__testomonials{
+	.all__testomonials {
 		margin: 30px 0;
 		display: grid;
-		grid-template-columns: repeat(2,1fr);
+		grid-template-columns: repeat(2, 1fr);
 		justify-content: center;
 		grid-gap: 30px;
 	}
 
-	.testomonial{
+	.testomonial {
 		max-width: 550px;
-		padding:40px 30px;
+		padding: 40px 30px;
 
-		.user__data{
+		.user__data {
 			display: flex;
 			align-items: center;
-			img{
+			img {
 				display: inline;
 				width: 8%;
 				border-radius: 50%;
@@ -457,13 +453,13 @@
 				border: 2px solid rgb(250, 0, 30);
 			}
 
-			&>div{
+			& > div {
 				padding-left: 10px;
-				&>h4{
+				& > h4 {
 					font-size: 18px;
 					font-weight: 700;
 				}
-				&>p{
+				& > p {
 					font-size: 10px;
 					margin-top: 3px;
 				}
@@ -471,15 +467,15 @@
 		}
 		background: white;
 		box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.055);
-		
-		&>span{
+
+		& > span {
 			display: inline-block;
 			font-style: italic;
 			line-height: 32px;
-			font-size:16px;
+			font-size: 16px;
 			padding-top: 10px;
 
-			&>.large__font{
+			& > .large__font {
 				font-size: 25px;
 				color: rgb(250, 0, 30);
 				font-weight: 600;
@@ -489,70 +485,69 @@
 }
 
 // View our projects
-.view__our__projects{
+.view__our__projects {
 	width: 80%;
 	margin: 50px auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	
-	.projects__header{
+
+	.projects__header {
 		text-align: left;
 
-		h1{
+		h1 {
 			font-size: 38px;
 		}
 	}
 
-	&>.projects{
-		.project:nth-child(odd){
+	& > .projects {
+		.project:nth-child(odd) {
 			flex-direction: row-reverse;
 		}
 
-		.project{
+		.project {
 			display: flex;
 			order: 0;
 			align-items: center;
 
-			&>.image{
-				img{
+			& > .image {
+				img {
 					width: 100%;
 				}
 			}
 
-			&>.project__info{
+			& > .project__info {
 				margin-left: 40px;
 				background: white;
 				box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.048);
 				width: 100%;
 				padding: 35px 35px;
 
-				h1{
+				h1 {
 					font-size: 30px;
 					color: $secondary-color;
 				}
 
-				p{
+				p {
 					font-size: 14px;
 					width: 90%;
 					line-height: 34px;
 					padding: 10px 0 15px 0;
 				}
-				
-				&>.project__buttons{
+
+				& > .project__buttons {
 					margin-top: 5px;
 					display: flex;
 					font-size: 14px;
 					align-items: center;
 
-	
-					.blue__link{
+					.blue__link {
 						font-weight: 600;
 						padding: 15px 20px;
 						color: $secondary-color;
 					}
 
-					.red__button{
+					.red__button {
 						padding: 15px 20px;
 						font-weight: 600;
 						color: white;
@@ -565,8 +560,8 @@
 	}
 }
 
-// Who are we 
-.who__are__we{
+// Who are we
+.who__are__we {
 	width: 80%;
 	margin: 50px auto;
 	margin-top: 100px;
@@ -576,32 +571,32 @@
 	text-align: center;
 	height: 60vh;
 
-	.who__are__we__header{
-		h1{
+	.who__are__we__header {
+		h1 {
 			font-size: 38px;
 		}
-		hr{
+		hr {
 			width: 100px;
 			margin: 20px auto;
-			border:1px solid rgb(250, 0, 30);
+			border: 1px solid rgb(250, 0, 30);
 		}
 	}
-	.who__are__we__content{
+	.who__are__we__content {
 		display: grid;
-		grid-template-columns: repeat(2,1fr);
+		grid-template-columns: repeat(2, 1fr);
 		align-items: center;
 		height: 30vh;
-		.logo{
+		.logo {
 			width: 60%;
 			margin: 0 auto;
 			box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.027);
-	
-			img{
+
+			img {
 				width: 65%;
 			}
 		}
 
-		.who__are__we__info > p{
+		.who__are__we__info > p {
 			text-align: left;
 			font-size: 14px;
 			line-height: 28px;
@@ -610,7 +605,7 @@
 }
 
 // What more are you waiting for
-.what__more{
+.what__more {
 	height: 40vh;
 	display: flex;
 	flex-direction: column;
@@ -618,16 +613,15 @@
 	justify-content: center;
 	margin-bottom: 70px;
 
-	h1{
+	h1 {
 		font-size: 38px;
 	}
 
-	p{
+	p {
 		padding: 20px 0;
 	}
 
-	.button__red{
-
+	.button__red {
 	}
 }
 
@@ -740,11 +734,11 @@
 .secondp {
 	text-align: inherit;
 
-  font-size: 15px;
-  margin-left: 700px; 
-  font-size: 15px; 
-  margin-right: 15px;
-  line-height: 1.7rem;
+	font-size: 15px;
+	margin-left: 700px;
+	font-size: 15px;
+	margin-right: 15px;
+	line-height: 1.7rem;
 	/*width: 90%; */
 	height: 400px;
 	text-align: inherit;
@@ -776,26 +770,25 @@
 }
 
 .firstp2 {
-  
-  padding: 20px 40px 40px;
-  max-width: 640px;
-  display: flex;
-  &__image {
-    margin: 20px 30px 0 0;
-    width: 200px;
-    object-fit: contain;
-    align-self: flex-start;
-  }
-  &__text {
-    flex: 1 1 auto;
-  }
-  
+	padding: 20px 40px 40px;
+	max-width: 640px;
+	display: flex;
+	&__image {
+		margin: 20px 30px 0 0;
+		width: 200px;
+		object-fit: contain;
+		align-self: flex-start;
+	}
+	&__text {
+		flex: 1 1 auto;
+	}
+
 	font-size: 15px;
 	margin-left: 590px;
 	font-size: 15px;
 	margin-right: 15px;
 	line-height: 1.7rem;
-  float: left;
+	float: left;
 }
 
 .twowords {
@@ -814,10 +807,9 @@
 	width: 90%;
 	height: 400px;
 	text-align: inherit;
-
-.bookservice{
-  margin-top: 3%;
-  
+}
+.bookservice {
+	margin-top: 3%;
 }
 
 .bookservice2 {
