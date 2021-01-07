@@ -133,14 +133,14 @@
 	margin: 0 auto;
 
 	&__hero-section {
-		width: 740px;
+		width: 45%;
 
 		h1 {
 			color: $secondary-color;
 			font-style: normal;
 			font-weight: 600;
-			font-size: 49px;
-			padding: 22% 0 40px 0;
+			font-size: 2rem;
+			padding: 25% 0 40px 0;
 			line-height: 132.19%;
 			/* or 65px */
 			letter-spacing: -0.025em;
@@ -149,10 +149,9 @@
 
 		p {
 			font-family: Inter;
-			font-size: 25px;
 			font-style: normal;
 			font-weight: 500;
-			line-height: 53px;
+			line-height: 35px;
 			letter-spacing: 0em;
 			text-align: left;
 		}
@@ -161,30 +160,29 @@
 	&__form-section {
 		margin-top: 86px;
 		margin-bottom: 10%;
+		// width: 650px;
 		position: relative;
-		width: 822px;
 		box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.048);
 	}
 
 	&__form-section-container {
-		padding: 0 53px;
+		padding: 0 30px;
 	}
 
 	&__form-section-header {
-		padding-top: 30px;
+		padding-top: 15px;
 
 		h2 {
 			letter-spacing: -1px;
 			font-style: normal;
 			font-weight: 600;
-			font-size: 45px;
+			font-size: 2rem;
 			line-height: 211.69%;
 		}
 
 		p {
 			font-style: normal;
 			font-weight: 500;
-			font-size: 23px;
 			line-height: 184.69%;
 			/* or 42px */
 			color: #5f5f5f;
@@ -203,12 +201,11 @@
 			margin: 8px 0;
 			border-radius: 5px;
 
-			@include placeholder(#c7c2c2, 23px);
+			@include placeholder(#c7c2c2, 13px);
 		}
 
 		input {
 			width: 100%;
-			height: 103px;
 			border: 1px solid #e3e3e3;
 		}
 
@@ -219,9 +216,7 @@
 
 		button {
 			background: $primary-color;
-			height: 103px;
 			color: #ffffff;
-			font-size: 34px;
 			letter-spacing: 0.025em;
 			border: none;
 			margin: 35px 0;
@@ -237,7 +232,7 @@
 		font-family: $primary_font;
 		font-style: normal;
 		font-weight: 600;
-		font-size: 68px;
+		font-size: 2.5rem;
 		letter-spacing: -0.025em;
 		line-height: 211.69%;
 		/* identical to box height, or 144px */
@@ -245,11 +240,11 @@
 
 	&__container {
 		display: flex;
-		width: 1096px;
+		width: 50%;
 		margin: 0 auto;
 		flex-direction: column;
 		justify-content: space-between;
-		padding: 100px 0 200px 0;
+		padding: 70px 0 200px 0;
 	}
 
 	&__questions-container {
@@ -257,8 +252,8 @@
 	}
 
 	&__questions {
-		height: 125px;
-		padding: 0 40px;
+		cursor: pointer;
+		padding: 20px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -271,10 +266,14 @@
 			font-family: $primary_font;
 			font-style: normal;
 			font-weight: 500;
-			font-size: 27px;
+			font-size: 1rem;
 			line-height: 211.69%;
 			/* or 57px */
 			color: $secondary-color;
+		}
+
+		&__icon {
+			color: #b9b3b3;
 		}
 	}
 
@@ -282,26 +281,24 @@
 		font-family: $primary_font;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 26px;
+		font-size: 1rem;
 		line-height: 211.69%;
 		/* or 55px */
 		color: #919191;
-		padding: 40px;
+		text-align: left;
+		padding: 30px 35px;
 		background: #ffffff;
 		border: 1px solid #c7c7c7;
 		box-sizing: border-box;
 		border-radius: 5px;
 
 		display: none;
-
-		&:nth-child(2) {
-			display: block;
-		}
+		transition: all 0.3s ease-in-out;
 	}
 }
 
-// Why work with us 
-.why__work__with__us{
+// Why work with us
+.why__work__with__us {
 	height: 60vh;
 	display: flex;
 	flex-direction: column;
@@ -310,28 +307,28 @@
 	margin-bottom: 40px;
 	margin: 70px 0;
 
-	&>h3{
+	& > h3 {
 		font-size: 38px;
 	}
 
-	&>hr{
+	& > hr {
 		width: 100px;
 		margin: 20px 0;
-		border:1px solid rgb(250, 0, 30);
+		border: 1px solid rgb(250, 0, 30);
 	}
 
-	&>.company__info{
+	& > .company__info {
 		width: 100%;
 		display: flex;
 		justify-content: space-evenly;
 		margin: 40px 0;
 
-		&>div{
-			&>h1{
+		& > div {
+			& > h1 {
 				font-size: 70px;
 				color: rgb(250, 0, 30);
 			}
-			&>p{
+			& > p {
 				font-size: 25px;
 				font-weight: 700;
 				margin-top: 10px;
@@ -341,7 +338,7 @@
 }
 
 // Services we offer
-.services__we__offer{
+.services__we__offer {
 	align-items: center;
 	width: 90%;
 	margin: 0 auto;
@@ -349,49 +346,48 @@
 	flex-direction: column;
 	margin-bottom: 40px;
 
-	&>.services__header{
+	& > .services__header {
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
 
-		h2{
+		h2 {
 			font-size: 33px;
 		}
 
-		h4{
+		h4 {
 			width: 50%;
 			font-weight: 400;
 			font-size: 14px;
 			line-height: 24px;
-			border-left: 2px solid 
-			rgb(250, 0, 30);
+			border-left: 2px solid rgb(250, 0, 30);
 			padding-left: 25px;
 		}
 	}
 
-	&>.service{
+	& > .service {
 		width: 90%;
 		margin: 0 auto;
 		padding: 50px 0;
-		img{
-			width:45%;
+		img {
+			width: 45%;
 			margin: 0;
 		}
 		display: flex;
 		align-items: center;
 
-		&>.service__content{
-			padding:0 30px;
-			h2{
+		& > .service__content {
+			padding: 0 30px;
+			h2 {
 				font-size: 30px;
 			}
-			p{
+			p {
 				font-size: 14px;
 				line-height: 28px;
 				padding: 15px 0;
 			}
 
-			&>a{
+			& > a {
 				background: rgb(250, 0, 30);
 				color: white;
 				padding: 15px 25px;
@@ -403,7 +399,7 @@
 	}
 }
 
-.testomonials{
+.testomonials {
 	// height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -412,7 +408,7 @@
 	margin: 70px 0;
 	position: relative;
 
-	.red__box{
+	.red__box {
 		height: 450px;
 		width: 450px;
 		bottom: 10%;
@@ -422,37 +418,34 @@
 		z-index: -1;
 	}
 
-	.testomonials__header{
-
-		&>h1{
+	.testomonials__header {
+		& > h1 {
 			font-size: 38px;
 		}
-	
-		&>hr{
+
+		& > hr {
 			width: 100px;
 			margin: 20px auto;
-			border:1px solid rgb(250, 0, 30);
+			border: 1px solid rgb(250, 0, 30);
 		}
-	
 	}
 
-
-	.all__testomonials{
+	.all__testomonials {
 		margin: 30px 0;
 		display: grid;
-		grid-template-columns: repeat(2,1fr);
+		grid-template-columns: repeat(2, 1fr);
 		justify-content: center;
 		grid-gap: 30px;
 	}
 
-	.testomonial{
+	.testomonial {
 		max-width: 550px;
-		padding:40px 30px;
+		padding: 40px 30px;
 
-		.user__data{
+		.user__data {
 			display: flex;
 			align-items: center;
-			img{
+			img {
 				display: inline;
 				width: 8%;
 				border-radius: 50%;
@@ -460,13 +453,13 @@
 				border: 2px solid rgb(250, 0, 30);
 			}
 
-			&>div{
+			& > div {
 				padding-left: 10px;
-				&>h4{
+				& > h4 {
 					font-size: 18px;
 					font-weight: 700;
 				}
-				&>p{
+				& > p {
 					font-size: 10px;
 					margin-top: 3px;
 				}
@@ -474,15 +467,15 @@
 		}
 		background: white;
 		box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.055);
-		
-		&>span{
+
+		& > span {
 			display: inline-block;
 			font-style: italic;
 			line-height: 32px;
-			font-size:16px;
+			font-size: 16px;
 			padding-top: 10px;
 
-			&>.large__font{
+			& > .large__font {
 				font-size: 25px;
 				color: rgb(250, 0, 30);
 				font-weight: 600;
@@ -492,70 +485,69 @@
 }
 
 // View our projects
-.view__our__projects{
+.view__our__projects {
 	width: 80%;
 	margin: 50px auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	
-	.projects__header{
+
+	.projects__header {
 		text-align: left;
 
-		h1{
+		h1 {
 			font-size: 38px;
 		}
 	}
 
-	&>.projects{
-		.project:nth-child(odd){
+	& > .projects {
+		.project:nth-child(odd) {
 			flex-direction: row-reverse;
 		}
 
-		.project{
+		.project {
 			display: flex;
 			order: 0;
 			align-items: center;
 
-			&>.image{
-				img{
+			& > .image {
+				img {
 					width: 100%;
 				}
 			}
 
-			&>.project__info{
+			& > .project__info {
 				margin-left: 40px;
 				background: white;
 				box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.048);
 				width: 100%;
 				padding: 35px 35px;
 
-				h1{
+				h1 {
 					font-size: 30px;
 					color: $secondary-color;
 				}
 
-				p{
+				p {
 					font-size: 14px;
 					width: 90%;
 					line-height: 34px;
 					padding: 10px 0 15px 0;
 				}
-				
-				&>.project__buttons{
+
+				& > .project__buttons {
 					margin-top: 5px;
 					display: flex;
 					font-size: 14px;
 					align-items: center;
 
-	
-					.blue__link{
+					.blue__link {
 						font-weight: 600;
 						padding: 15px 20px;
 						color: $secondary-color;
 					}
 
-					.red__button{
+					.red__button {
 						padding: 15px 20px;
 						font-weight: 600;
 						color: white;
@@ -568,8 +560,8 @@
 	}
 }
 
-// Who are we 
-.who__are__we{
+// Who are we
+.who__are__we {
 	width: 80%;
 	margin: 50px auto;
 	margin-top: 100px;
@@ -579,32 +571,32 @@
 	text-align: center;
 	height: 60vh;
 
-	.who__are__we__header{
-		h1{
+	.who__are__we__header {
+		h1 {
 			font-size: 38px;
 		}
-		hr{
+		hr {
 			width: 100px;
 			margin: 20px auto;
-			border:1px solid rgb(250, 0, 30);
+			border: 1px solid rgb(250, 0, 30);
 		}
 	}
-	.who__are__we__content{
+	.who__are__we__content {
 		display: grid;
-		grid-template-columns: repeat(2,1fr);
+		grid-template-columns: repeat(2, 1fr);
 		align-items: center;
 		height: 30vh;
-		.logo{
+		.logo {
 			width: 60%;
 			margin: 0 auto;
 			box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.027);
-	
-			img{
+
+			img {
 				width: 65%;
 			}
 		}
 
-		.who__are__we__info > p{
+		.who__are__we__info > p {
 			text-align: left;
 			font-size: 14px;
 			line-height: 28px;
@@ -613,7 +605,7 @@
 }
 
 // What more are you waiting for
-.what__more{
+.what__more {
 	height: 40vh;
 	display: flex;
 	flex-direction: column;
@@ -621,16 +613,15 @@
 	justify-content: center;
 	margin-bottom: 70px;
 
-	h1{
+	h1 {
 		font-size: 38px;
 	}
 
-	p{
+	p {
 		padding: 20px 0;
 	}
 
-	.button__red{
-
+	.button__red {
 	}
 }
 
@@ -713,17 +704,6 @@
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
 // services page code
 .services {
 	display: flex;
@@ -737,127 +717,125 @@
 	/*display: flex;
  justify-content: center;
  */
- 
- 
-  text-align: inherit;
-  width: 10%;
 
-  font-size: 15px;
-  /*margin-left: 590px; */
-  font-size: 15px; 
-  margin-left: 410px;
-  line-height: 1.7rem;
-	width:330%;
+	text-align: inherit;
+	width: 10%;
+
+	font-size: 15px;
+	/*margin-left: 590px; */
+	font-size: 15px;
+	margin-left: 410px;
+	line-height: 1.7rem;
+	width: 330%;
 	height: 400px;
 	text-align: inherit;
 }
 
-  
-
 .secondp {
-  text-align: inherit;
+	text-align: inherit;
 
-
-  font-size: 15px;
-  margin-left: 700px; 
-  font-size: 15px; 
-  margin-right: 15px;
-  line-height: 1.7rem;
+	font-size: 15px;
+	margin-left: 700px;
+	font-size: 15px;
+	margin-right: 15px;
+	line-height: 1.7rem;
 	/*width: 90%; */
-	height: 400px; 
-  text-align: inherit;
-  display: inline-block;
-  position: relative;
-  bottom: 200px;
-  
-  
+	height: 400px;
+	text-align: inherit;
+	display: inline-block;
+	position: relative;
+	bottom: 200px;
 }
 
 .lux {
-  display: flex;
+	display: flex;
 	/*justify-content: center; */
 	margin-right: 100px;
-  
-  line-height: 1.0em;
-  font-size: 20px;
-  margin-top: -40px;
-  font-size: 3em;
-  
+
+	line-height: 1em;
+	font-size: 20px;
+	margin-top: -40px;
+	font-size: 3em;
 }
 
-
-
-	
-  .squarepic {
-    /*display: flex; 
+.squarepic {
+	/*display: flex; 
     align-items: flex-start; 
   justify-content: flex-start;
   */
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin-top: -300px;
-  }
-
-
-
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin-top: -300px;
+}
 
 .firstp2 {
-  
-  padding: 20px 40px 40px;
-  max-width: 640px;
-  display: flex;
-  &__image {
-    margin: 20px 30px 0 0;
-    width: 200px;
-    object-fit: contain;
-    align-self: flex-start;
-  }
-  &__text {
-    flex: 1 1 auto;
-  }
-  
+	padding: 20px 40px 40px;
+	max-width: 640px;
+	display: flex;
+	&__image {
+		margin: 20px 30px 0 0;
+		width: 200px;
+		object-fit: contain;
+		align-self: flex-start;
+	}
+	&__text {
+		flex: 1 1 auto;
+	}
+
 	font-size: 15px;
 	margin-left: 590px;
 	font-size: 15px;
 	margin-right: 15px;
 	line-height: 1.7rem;
-  float: left;
+	float: left;
 }
 
-.twowords{
-  margin-left: 270px;
+.twowords {
+	margin-left: 270px;
 }
 
+.thridp {
+	text-align: inherit;
+	width: 10%;
 
-.thridp{
-  text-align: inherit;
-  width: 10%;
+	font-size: 15px;
+	/*margin-left: 590px; */
+	font-size: 15px;
 
-  font-size: 15px;
-  /*margin-left: 590px; */
-  font-size: 15px; 
-  
-  line-height: 2.7rem;
-	width:90%;
+	line-height: 2.7rem;
+	width: 90%;
 	height: 400px;
-  text-align: inherit;
-  
-  margin-top: -330px;
-  margin-left: 80px;
+	text-align: inherit;
+}
+.bookservice {
+	margin-top: 3%;
 }
 
-
-.bookservice{
-  margin-top: 3%;
-  
+.bookservice2 {
+	color: black;
 }
 
-.bookservice2{
-	color:black;
+.squarepic {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
 }
 
-
+.firstp2 {
+	padding: 20px 40px 40px;
+	max-width: 640px;
+	display: flex;
+	&__image {
+		margin: 20px 30px 0 0;
+		width: 200px;
+		object-fit: contain;
+		align-self: flex-start;
+	}
+	&__text {
+		flex: 1 1 auto;
+	}
+}
 
 // ------------- Code --------------
 
