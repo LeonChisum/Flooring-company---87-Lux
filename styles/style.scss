@@ -185,6 +185,7 @@
 		p {
 			font-style: normal;
 			font-weight: 500;
+			font-size: $lg_paragraph;
 			line-height: 184.69%;
 			/* or 42px */
 			color: #5f5f5f;
@@ -652,6 +653,7 @@
 	}
 	&__link {
 		font-weight: 500;
+		font-size: $lg_paragraph;
 		text-decoration: none;
 		letter-spacing: -0.025em;
 		color: #ffffff;
