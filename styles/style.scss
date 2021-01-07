@@ -124,6 +124,186 @@
 	font-size: 15px;
 }
 
+/************** Gallery Page Styles *****************/
+
+#gallery {
+	padding: 10em 0;
+
+	.gallery__container {
+		width: 70%;
+		margin: 0 auto;
+
+		.gallery__title {
+			text-align: center;
+			font-size: $lg_heading;
+			font-size: 600;
+			font-family: 'Avenir Next', sans-serif;
+			color: #080036;
+			margin-bottom: 1em;
+		}
+
+		.gallery__p {
+			text-align: center;
+			font-size: $lg_paragraph;
+			color: #3d3d3d;
+			line-height: 2.5rem;
+			margin-bottom: 4em;
+		}
+
+		.gallery-grid {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows: 300px 300px 200px 200px 400px 200px;
+			grid-gap: 1em;
+
+			&--box {
+				position: relative;
+				transition: all 0.6s ease-in-out;
+
+				&:hover {
+					.gallery-grid__info {
+						visibility: visible;
+						opacity: 1;
+					}
+				}
+
+				.gallery-grid__info {
+					position: absolute;
+					width: 100%;
+					padding: 1em 0 1em 1em;
+					color: #fff;
+					z-index: 1;
+					bottom: 0;
+					background: rgba(8, 0, 54, 0.42);
+					visibility: hidden;
+					opacity: 0;
+				}
+			}
+
+			&__box-1 {
+				background: url('/img/project-image-1.png') no-repeat center center;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+
+				grid-column: 1 / 2;
+				grid-row: 1 / 2;
+			}
+
+			&__box-2 {
+				background: url('/img/project-image-2.png') no-repeat bottom center;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+
+				grid-column: 2 / 5;
+				grid-row: 1 / 2;
+			}
+
+			&__box-3 {
+				background: url('/img/project-image-3.png') no-repeat center center;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+
+				grid-column: 1 / 2;
+				grid-row: 2 / 3;
+			}
+
+			&__box-4 {
+				background: url('/img/project-image-4.png') no-repeat center center;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+
+				grid-column: 2 / 4;
+				grid-row: 2 / 3;
+			}
+
+			&__box-5 {
+				background: url('/img/project-image-5.png') no-repeat bottom center;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+
+				grid-column: 4 / 5;
+				grid-row: 2 / 4;
+			}
+
+			&__box-6 {
+				background: url('/img/project-image-6.png') no-repeat bottom center;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+
+				grid-column: 1 / 4;
+				grid-row: 3 / 5;
+			}
+
+			&__box-7 {
+				background: url('/img/project-image-7.png') no-repeat bottom center;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+
+				grid-column: 4 / 5;
+				grid-row: 4 / 5;
+			}
+
+			&__box-8 {
+				background: url('/img/project-image-8.png') no-repeat bottom center;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+
+				grid-column: 1 / 2;
+				grid-row: 5 / 7;
+			}
+
+			&__box-9 {
+				background: url('/img/project-image-9.png') no-repeat bottom center;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+
+				grid-column: 2 / 4;
+				grid-row: 5 / 6;
+			}
+
+			&__box-10 {
+				background: url('/img/project-image-10.png') no-repeat bottom center;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+
+				grid-column: 2 / 5;
+				grid-row: 6 / 7;
+			}
+
+			&__box-11 {
+				background: url('/img/project-image-11.png') no-repeat center center;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+
+				grid-column: 4 / 5;
+				grid-row: 5 / 6;
+			}
+		}
+	}
+}
+
 //Contact Us
 .contact {
 	display: flex;
@@ -624,8 +804,8 @@
 		padding: 20px 0;
 	}
 
-	.button__red {
-	}
+	//   .button__red {
+	//   }
 }
 
 //Footer
