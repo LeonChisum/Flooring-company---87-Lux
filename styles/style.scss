@@ -139,7 +139,8 @@
 			color: $secondary-color;
 			font-style: normal;
 			font-weight: 600;
-			font-size: 2rem;
+			font-size: $lg_heading;
+			text-transform: capitalize;
 			padding: 25% 0 40px 0;
 			line-height: 132.19%;
 			/* or 65px */
@@ -150,6 +151,7 @@
 		p {
 			font-family: Inter;
 			font-style: normal;
+			font-size: $lg_paragraph;
 			font-weight: 500;
 			line-height: 35px;
 			letter-spacing: 0em;
@@ -232,7 +234,7 @@
 		font-family: $primary_font;
 		font-style: normal;
 		font-weight: 600;
-		font-size: 2.5rem;
+		font-size: $lg_heading;
 		letter-spacing: -0.025em;
 		line-height: 211.69%;
 		/* identical to box height, or 144px */
