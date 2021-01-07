@@ -5,35 +5,35 @@ $primary-color: #fa001e;
 $secondary-color: #080036;
 
 // font
-$primary_font: 'Inter';
-$secondary_font: 'Oswald';
+$primary_font: "Inter";
+$secondary_font: "Oswald";
 
 //mixins
 
 // Create placeholder mixin
-@mixin placeholder($color, $size: '') {
-	&::-webkit-input-placeholder {
-		color: $color;
-		@if $size != '' {
-			font-size: $size;
-		}
-	}
-	&:-moz-placeholder {
-		color: $color;
-		@if $size != '' {
-			font-size: $size;
-		}
-	}
-	&::-moz-placeholder {
-		color: $color;
-		@if $size != '' {
-			font-size: $size;
-		}
-	}
-	&:-ms-input-placeholder {
-		color: $color;
-		@if $size != '' {
-			font-size: $size;
-		}
-	}
+@mixin placeholder($color, $size: "") {
+  &::-webkit-input-placeholder {
+    color: $color;
+    @if $size != "" {
+      font-size: $size;
+    }
+  }
+  &:-moz-placeholder {
+    color: $color;
+    @if $size != "" {
+      font-size: $size;
+    }
+  }
+  &::-moz-placeholder {
+    color: $color;
+    @if $size != "" {
+      font-size: $size;
+    }
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+    @if $size != "" {
+      font-size: $size;
+    }
+  }
 }
