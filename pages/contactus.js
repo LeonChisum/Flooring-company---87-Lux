@@ -1,4 +1,5 @@
 import '../styles/style.scss';
+import Head from 'next/head';
 import { useState } from 'react';
 
 import { BsPlus } from 'react-icons/bs';
@@ -77,6 +78,13 @@ const Contact = () => {
 
 	return (
 		<div>
+			<Head>
+				<meta
+					description='Ready for a new floor? Contact us today for a quote.'
+					content='flooring company, flooring, floor, floor covering, lay out, house, renovation, quote, estimate'
+				/>
+				<title>Contact Us - Request A Quote</title>
+			</Head>
 			<div className='contact'>
 				<div className='contact__hero-section'>
 					<h1>So, you are interested in Wood Depot</h1>
@@ -133,7 +141,7 @@ const Contact = () => {
 							<h1>How much time does it take to finish installing a Floor?</h1>
 							<IconContext.Provider value={{ color: '#B9B3B3' }}>
 								<div>
-									<BiMinus />
+									<BsPlus />
 								</div>
 							</IconContext.Provider>
 						</div>
