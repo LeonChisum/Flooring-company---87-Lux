@@ -890,134 +890,93 @@
 
 // services page code
 .services {
-	display: flex;
-	justify-content: center;
-	margin-right: 30px;
 	margin-top: 5%;
-	font-size: 1.2em;
-}
 
-.firstp {
-	/*display: flex;
- justify-content: center;
- */
+	&__header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 
-	text-align: inherit;
-	width: 10%;
+		h1 {
+			font-size: $lg_heading;
+			color: $secondary-color;
+			font-weight: 600;
+			margin-bottom: 2%;
+		}
 
-	font-size: 15px;
-	/*margin-left: 590px; */
-	font-size: 15px;
-	margin-left: 410px;
-	line-height: 1.7rem;
-	width: 330%;
-	height: 400px;
-	text-align: inherit;
-}
-
-.secondp {
-	text-align: inherit;
-
-	font-size: 15px;
-	margin-left: 700px;
-	font-size: 15px;
-	margin-right: 15px;
-	line-height: 1.7rem;
-	/*width: 90%; */
-	height: 400px;
-	text-align: inherit;
-	display: inline-block;
-	position: relative;
-	bottom: 200px;
-}
-
-.lux {
-	display: flex;
-	/*justify-content: center; */
-	margin-right: 100px;
-
-	line-height: 1em;
-	font-size: 20px;
-	margin-top: -40px;
-	font-size: 3em;
-}
-
-.squarepic {
-	/*display: flex; 
-    align-items: flex-start; 
-  justify-content: flex-start;
-  */
-	display: flex;
-	align-items: flex-start;
-	justify-content: flex-start;
-	margin-top: -300px;
-}
-
-.firstp2 {
-	padding: 20px 40px 40px;
-	max-width: 640px;
-	display: flex;
-	&__image {
-		margin: 20px 30px 0 0;
-		width: 200px;
-		object-fit: contain;
-		align-self: flex-start;
+		p {
+			font-size: $lg_paragraph;
+			line-height: $line_height;
+			width: 50%;
+			text-align: center;
+			margin-bottom: 10%;
+		}
 	}
-	&__text {
-		flex: 1 1 auto;
+	&__example {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		position: relative;
+		width: 90%;
+		margin: 0 auto;
+
+		&::before {
+			content: '';
+			height: 140%;
+			width: 35%;
+			position: absolute;
+			top: -20%;
+			left: -6%;
+			background: $primary-color;
+			z-index: 0;
+		}
+
+		img {
+			position: relative;
+			width: 40%;
+			z-index: 1;
+		}
+
+		&__info {
+			padding-left: 14%;
+			margin-top: -10%;
+
+			h1 {
+				font-size: $lg_heading;
+				color: $secondary-color;
+				font-weight: 600;
+				margin-bottom: 4%;
+			}
+
+			p {
+				font-size: $lg_paragraph;
+				line-height: $line_height;
+				margin-bottom: 4%;
+			}
+
+			a {
+				text-decoration: none;
+				color: $primary-color;
+				display: flex;
+
+				svg {
+					margin-left: 12px;
+				}
+			}
+		}
 	}
+	&__description {
+		margin-top: 14%;
+		padding-left: 5%;
+		margin-bottom: 10%;
 
-	font-size: 15px;
-	margin-left: 590px;
-	font-size: 15px;
-	margin-right: 15px;
-	line-height: 1.7rem;
-	float: left;
-}
-
-.twowords {
-	margin-left: 270px;
-}
-
-.thridp {
-	text-align: inherit;
-	width: 10%;
-
-	font-size: 15px;
-	/*margin-left: 590px; */
-	font-size: 15px;
-
-	line-height: 2.7rem;
-	width: 90%;
-	height: 400px;
-	text-align: inherit;
-}
-.bookservice {
-	margin-top: 3%;
-}
-
-.bookservice2 {
-	color: black;
-}
-
-.squarepic {
-	display: flex;
-	align-items: flex-start;
-	justify-content: flex-start;
-}
-
-.firstp2 {
-	padding: 20px 40px 40px;
-	max-width: 640px;
-	display: flex;
-	&__image {
-		margin: 20px 30px 0 0;
-		width: 200px;
-		object-fit: contain;
-		align-self: flex-start;
-	}
-	&__text {
-		flex: 1 1 auto;
+		p {
+			line-height: $line_height;
+			font-size: $lg_paragraph;
+			width: 70%;
+			margin-bottom: 2%;
+		}
 	}
 }
 

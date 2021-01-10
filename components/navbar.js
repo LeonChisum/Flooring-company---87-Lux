@@ -27,7 +27,7 @@ const Navbar = () => {
 						<Link href='/contactus'>
 							<a className='nav__link'>Contact Us</a>
 						</Link>
-						<Link href='/getaquote'>
+						<Link href='/contactus'>
 							<a className='nav__link button__red'>Get a Quote</a>
 						</Link>
 					</div>

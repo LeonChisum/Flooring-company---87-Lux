@@ -10,7 +10,7 @@ const Header = () => {
 					<Link href='/aboutus'>
 						<a className='header__white__btn'>About Us</a>
 					</Link>
-					<Link href='/getaquote'>
+					<Link href='/contactus'>
 						<a className='header__red__btn'> Get Quote</a>
 					</Link>
 				</div>
