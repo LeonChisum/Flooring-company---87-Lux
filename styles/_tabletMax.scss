@@ -1,2 +1,41 @@
 @media all and (max-width: 1024px) {
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	// Contact page
+	.contact {
+		width: 100%;
+		padding: 0;
+		flex-direction: column;
+
+		&__hero-section {
+			width: 100%;
+
+			h1 {
+				padding: 15% 0 40px 0;
+			}
+
+			p {
+				width: 65%;
+			}
+		}
+	}
+	.faq {
+		&__container {
+			width: 100%;
+		}
+	}
+
+	//Footer
+	.footer {
+		&__content {
+			padding: 0 13%;
+		}
+
+		&__copyright-section {
+			padding: 20px 95px;
+		}
+	}
 }
