@@ -111,8 +111,8 @@ const Contact = () => {
 								name='message'
 								placeholder='Message'
 								onChange={handleChange}></textarea>
-							<button type='submit' onClick={handleSubmit}>
-								Submit
+							<button type='submit' onClick={handleSubmit} disabled={status.submitting}>
+								{!status.submitting ? (!status.submitted ? 'Submit' : 'Submitted') : 'Submitting...'}
 							</button>
 						</form>
 					</div>
