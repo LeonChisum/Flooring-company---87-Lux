@@ -1,2 +1,32 @@
 @media all and (max-width: 600px) {
+	// Contact page
+	.contact {
+		width: 100%;
+		padding: 0;
+		flex-direction: column;
+
+		&__hero-section {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			h1 {
+				padding: 15% 0 40px 0;
+			}
+
+			p {
+				width: 90%;
+			}
+		}
+	}
+	.faq {
+		h1 {
+			line-height: 132.19%;
+		}
+		&__container {
+			width: 100%;
+		}
+	}
 }
