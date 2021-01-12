@@ -19,7 +19,7 @@ const Services = () => {
           <h1>Luxury Vinyl</h1>
           <p>
             Luxury vinyl is one of the most durable flooring options out there.
-            it can withstand water and moisture, as well as wear and tear. It is
+            It can withstand water and moisture, as well as wear and tear. It is
             also stain and scratch resistant. This durability makes it an ideal
             flooring option.
           </p>

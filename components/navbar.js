@@ -1,5 +1,4 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React, { useEffect, useState } from "react";
 
 import Link from "next/link";
 
@@ -8,6 +7,46 @@ import { BsChevronRight } from "react-icons/bs";
 import "../styles/style.scss";
 
 const Navbar = () => {
+  useEffect(() => {
+    // let [count, setCount] = useState(0);
+
+    let hamburgerMenu = document.querySelector(".hamburger-menu");
+    let mobileMenu = document.querySelector(".mobile-menu");
+    let mobileLinks = document
+      .querySelector(".mobile-menu")
+      .querySelectorAll(".mobile-menu__link");
+
+    hamburgerMenu.addEventListener("click", () => {
+      mobileMenu.classList.toggle("active");
+    });
+
+    // mobileLinks[0].onclick = () => {
+    //   mobileMenu.classList.remove("active");
+    // };
+
+    // mobileLinks[1].onclick = () => {
+    //   mobileMenu.classList.remove("active");
+    // };
+
+    // mobileLinks[2].onclick = () => {
+    //   mobileMenu.classList.remove("active");
+    // };
+
+    // mobileLinks[3].onclick = () => {
+    //   mobileMenu.classList.remove("active");
+    // };
+
+    // mobileLinks[4].onclick = () => {
+    //   mobileMenu.classList.remove("active");
+    // };
+
+    // for (let i = 0; i < mobileLinks.length; i++) {
+    //   mobileLinks[i].addEventListener("click", () => {
+    //     mobileMenu.classList.remove("active");
+    //   });
+    // }
+  });
+
   return (
     <div className="navbar__content">
       <h3 className="navbar__announcment">

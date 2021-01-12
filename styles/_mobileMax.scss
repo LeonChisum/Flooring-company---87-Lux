@@ -1,6 +1,11 @@
 @media all and (max-width: 600px) {
   /*********** Navbar Menu ***********/
+  #__next {
+    overflow-x: hidden;
+  }
+
   .navbar__content {
+    width: 100%;
     position: relative;
     z-index: 1000;
 
@@ -24,9 +29,17 @@
     }
 
     // Mobile Menu
-    //   .mobile-menu {
-    //     // .navbar__link {
-    //     // }
-    //   }
+    .mobile-menu {
+      display: flex;
+    }
+  }
+
+  /*********** Footer Menu ***********/
+  .footer {
+    &__content {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-row-gap: 10%;
+    }
   }
 }
