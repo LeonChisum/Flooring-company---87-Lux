@@ -10,6 +10,7 @@ const Gallery = () => {
                 <Head>
                     <meta description="See our gallery with a wide range of beautiful projects that we've done for our clients" content='flooring company, flooring, floor, floor covering, lay out, house, renovation' />
                     <title>Gallery - See Our beautiful projects</title>
+                    <link rel="shortcut icon" href="/favicon.ico" />
                 </Head>
 
                 <section id='gallery'>
