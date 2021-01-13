@@ -35,6 +35,29 @@
     }
   }
 
+  /*********** Services Page Style ***********/
+
+  .services {
+    &__header {
+      margin: 4em 0 4em 0;
+
+      p {
+        width: 100%;
+      }
+    }
+
+    &__example {
+      margin-bottom: 4em;
+    }
+
+    &__description {
+      padding: 0;
+      p {
+        width: 100%;
+      }
+    }
+  }
+
   /*********** Gallery Page Style ***********/
   #gallery {
     .gallery__container {

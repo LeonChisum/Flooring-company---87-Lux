@@ -35,6 +35,47 @@
     }
   }
 
+  /*********** Services Page Style ***********/
+
+  .services {
+    &__header {
+      margin: 4em 0 4em 0;
+
+      p {
+        width: 100%;
+      }
+    }
+
+    &__example {
+      display: block;
+      margin-bottom: 4em;
+      width: 100%;
+
+      &::before {
+        position: static;
+      }
+
+      img {
+        width: 100%;
+        position: static;
+        z-index: 0;
+        margin-bottom: 4em;
+      }
+
+      .services__example__info {
+        padding: 0;
+        margin-top: 0;
+      }
+    }
+
+    &__description {
+      padding: 0;
+      p {
+        width: 100%;
+      }
+    }
+  }
+
   /*********** Gallery Page Style ***********/
   #gallery {
     .gallery__container {
@@ -128,9 +169,9 @@
     }
   }
 
-  /*********** Footer Menu Style ***********/
+  /*********** Footer Style ***********/
   .footer {
-    padding: 4em 0 0 0;
+    padding: 2em 0 0 0;
 
     &__content {
       display: flex;

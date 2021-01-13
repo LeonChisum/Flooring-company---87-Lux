@@ -27,6 +27,26 @@
     }
   }
 
+  /*********** Services Page Style ***********/
+
+  .services {
+    &__header {
+      margin: 4em 0 4em 0;
+    }
+
+    &__example {
+      margin-bottom: 4em;
+
+      &::before {
+        left: -16%;
+      }
+
+      img {
+        left: -6%;
+      }
+    }
+  }
+
   /*********** Gallery Page Style ***********/
   #gallery {
     .gallery__container {
