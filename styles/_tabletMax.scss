@@ -4,6 +4,42 @@
 		margin: 0 auto;
 	}
 
+	// Landing page
+
+	.why__work__with__us > .company__info {
+		flex-direction: column;
+		align-items: center;
+	}
+	.header__container > h1 {
+		font-size: $lg_heading;
+	}
+	.header__white__btn {
+		padding: 10px 20px;
+	}
+	.header__red__btn {
+		padding: 10px 20px;
+	}
+	.why__work__with__us {
+		margin: 22% 0;
+	}
+	.services__we__offer > .services__header h2 {
+		font-size: 33px;
+		margin-bottom: 10px;
+	}
+	.services__we__offer > .service img {
+		display: none;
+	}
+	.view__our__projects .projects__header h1 {
+		text-align: center;
+	}
+	.view__our__projects > .projects .project:nth-child(odd) {
+		flex-direction: column;
+		margin-top: 35px;
+	}
+	.view__our__projects > .projects .project {
+		flex-direction: column;
+		margin-top: 35px;
+	}
 	// Contact page
 	.contact {
 		width: 100%;
