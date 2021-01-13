@@ -9,10 +9,11 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer__content">
-        <div>
+        <div className="footer__info">
           <div className="footer__logo">
             <img src="../img/blueLogo.png" alt="Blue Logo" />
           </div>
+
           <div className="footer__contact-info">
             <a
               href="https://goo.gl/maps/3R43ACgtd6WxRSE37"
@@ -35,6 +36,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
+
         <div className="footer__extra-links">
           <h2>Extra Links</h2>
           <div>
@@ -62,6 +64,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+
       <div className="footer__copyright-section">
         <small>2020 &copy; All Rights Reserved</small>
         <div className="footer__icons">

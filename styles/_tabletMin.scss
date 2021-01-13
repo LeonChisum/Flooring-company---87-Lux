@@ -1,2 +1,53 @@
 @media all and (max-width: 768px) {
+  #__next {
+    overflow-x: hidden;
+  }
+
+  /*********** Navbar Menu Style ***********/
+
+  .navbar__content {
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+
+    .navbar {
+      .logo {
+        width: 20%;
+        img {
+          width: 100%;
+        }
+      }
+
+      // Navbar Links
+      .navbar__links {
+        display: none;
+      }
+
+      // Hamburger menu
+      .hamburger-menu {
+        display: block;
+      }
+    }
+
+    // Mobile Menu
+    .mobile-menu {
+      display: flex;
+    }
+  }
+
+  /*********** Gallery Page Style ***********/
+  #gallery {
+    .gallery__container {
+      width: 100%;
+    }
+  }
+
+  /*********** Footer Style ***********/
+  .footer {
+    &__content {
+      padding-left: 0;
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
 }
