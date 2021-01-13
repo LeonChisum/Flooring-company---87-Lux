@@ -8,7 +8,7 @@ const ServicesWeOffer = () => {
 	return (
 		<div className='services__we__offer'>
 			<div className='services__header'>
-				<h2>Services we Offer.</h2>
+				<h2>Services We Offer</h2>
 				<h4>
 					We offer a wide range of flooring services, and high quality installation services at affordable
 					prices.

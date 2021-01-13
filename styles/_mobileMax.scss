@@ -1,2 +1,83 @@
 @media all and (max-width: 600px) {
+	// Landing page
+	.why__work__with__us > .company__info > div > h1 {
+		text-align: center;
+	}
+	.services__we__offer > .services__header h4 {
+		width: 100%;
+	}
+	.services__we__offer > .service > .service__content {
+		padding: 0;
+	}
+	.testomonials .red__box {
+		bottom: 38%;
+	}
+	.testomonials .all__testomonials {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.view__our__projects {
+		width: 100%;
+	}
+	.view__our__projects > .projects .project > .project__info {
+		margin-left: 0;
+
+		p {
+			width: 100%;
+		}
+
+		.project__buttons {
+			text-align: center;
+		}
+	}
+
+	.who__are__we {
+		height: auto;
+	}
+
+	.who__are__we .who__are__we__content {
+		display: flex;
+		flex-direction: column-reverse;
+		height: auto;
+	}
+
+	.what__more h1 {
+		font-size: $lg_heading;
+		text-align: center;
+	}
+
+	.what__more p {
+		padding: 20px 50px;
+	}
+	// Contact page
+	.contact {
+		width: 100%;
+		padding: 0;
+		flex-direction: column;
+
+		&__hero-section {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			h1 {
+				padding: 15% 0 40px 0;
+			}
+
+			p {
+				width: 90%;
+			}
+		}
+	}
+	.faq {
+		h1 {
+			line-height: 132.19%;
+		}
+		&__container {
+			width: 100%;
+		}
+	}
 }
