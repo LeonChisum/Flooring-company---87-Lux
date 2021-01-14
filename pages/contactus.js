@@ -79,10 +79,7 @@ const Contact = () => {
 	return (
 		<div>
 			<Head>
-				<meta
-					description='Ready for a new floor? Contact us today for a quote.'
-					content='flooring company, flooring, floor, floor covering, lay out, house, renovation, quote, estimate'
-				/>
+				<meta name='description' content='Ready for a new floor? Contact us today for a quote.' />
 				<title>Contact Us - Request A Quote</title>
 			</Head>
 			<div className='contact'>

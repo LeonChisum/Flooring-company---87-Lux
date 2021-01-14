@@ -2,7 +2,7 @@ import React from 'react';
 
 const WhoAreWe = () => {
 	return (
-		<div className='who__are__we'>
+		<div id='who__are__we' className='who__are__we'>
 			<div className='who__are__we__header'>
 				<h1>Who are we?</h1>
 				<hr />
