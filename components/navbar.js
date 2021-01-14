@@ -1,5 +1,3 @@
-import React, { useEffect, useState } from "react";
-
 import Link from "next/link";
 
 import { BsChevronRight } from "react-icons/bs";
@@ -7,46 +5,6 @@ import { BsChevronRight } from "react-icons/bs";
 import "../styles/style.scss";
 
 const Navbar = () => {
-  useEffect(() => {
-    // let [count, setCount] = useState(0);
-
-    let hamburgerMenu = document.querySelector(".hamburger-menu");
-    let mobileMenu = document.querySelector(".mobile-menu");
-    let mobileLinks = document
-      .querySelector(".mobile-menu")
-      .querySelectorAll(".mobile-menu__link");
-
-    hamburgerMenu.addEventListener("click", () => {
-      mobileMenu.classList.toggle("active");
-    });
-
-    // mobileLinks[0].onclick = () => {
-    //   mobileMenu.classList.remove("active");
-    // };
-
-    // mobileLinks[1].onclick = () => {
-    //   mobileMenu.classList.remove("active");
-    // };
-
-    // mobileLinks[2].onclick = () => {
-    //   mobileMenu.classList.remove("active");
-    // };
-
-    // mobileLinks[3].onclick = () => {
-    //   mobileMenu.classList.remove("active");
-    // };
-
-    // mobileLinks[4].onclick = () => {
-    //   mobileMenu.classList.remove("active");
-    // };
-
-    // for (let i = 0; i < mobileLinks.length; i++) {
-    //   mobileLinks[i].addEventListener("click", () => {
-    //     mobileMenu.classList.remove("active");
-    //   });
-    // }
-  });
-
   return (
     <div className="navbar__content">
       <h3 className="navbar__announcment">
@@ -77,34 +35,45 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Hamburger Menu */}
-          <div className="hamburger-menu">
-            <div className="hamburger-menu__line"></div>
-            <div className="hamburger-menu__line"></div>
-            <div className="hamburger-menu__line"></div>
+          {/* Mobile Container */}
+          <div className="mobile-container">
+            {/* Hamburger Menu */}
+            <input
+              className="hamburger-menu-checkbox"
+              type="checkbox"
+              id="hamburger"
+            />
+
+            <div className="hamburger-menu">
+              <label className="hamburger-menu__label" for="hamburger">
+                <div className="hamburger-menu__line"></div>
+                <div className="hamburger-menu__line"></div>
+                <div className="hamburger-menu__line"></div>
+              </label>
+            </div>
+
+            {/* Mobile Menu */}
+            <div className="mobile-menu">
+              <Link href="/">
+                <a className="mobile-menu__link">Home</a>
+              </Link>
+              <Link href="/services">
+                <a className="mobile-menu__link">Services</a>
+              </Link>
+              <Link href="/gallery">
+                <a className="mobile-menu__link">Gallery</a>
+              </Link>
+              <Link href="/contactus">
+                <a className="mobile-menu__link">Contact Us</a>
+              </Link>
+              <Link href="/contactus">
+                <a className=" mobile-menu__link mobile-menu__link--red">
+                  Get a Quote
+                </a>
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
-
-      {/* Mobile Menu */}
-      <div className="mobile-menu">
-        <Link href="/">
-          <a className="mobile-menu__link">Home</a>
-        </Link>
-        <Link href="/services">
-          <a className="mobile-menu__link">Services</a>
-        </Link>
-        <Link href="/gallery">
-          <a className="mobile-menu__link">Gallery</a>
-        </Link>
-        <Link href="/contactus">
-          <a className="mobile-menu__link">Contact Us</a>
-        </Link>
-        <Link href="/contactus">
-          <a className=" mobile-menu__link mobile-menu__link--red">
-            Get a Quote
-          </a>
-        </Link>
       </div>
     </div>
   );

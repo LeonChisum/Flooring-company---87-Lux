@@ -40,9 +40,9 @@ const Footer = () => {
         <div className="footer__extra-links">
           <h2>Extra Links</h2>
           <div>
-            <Link href="/team">
+            {/* <Link href="/team">
               <a className="footer__link">Team</a>
-            </Link>
+            </Link> */}
             <Link href="/">
               <a className="footer__link">Home</a>
             </Link>
@@ -52,15 +52,15 @@ const Footer = () => {
             <Link href="/about-us">
               <a className="footer__link">About Us</a>
             </Link>
-            <Link href="/careers">
+            {/* <Link href="/careers">
               <a className="footer__link">Careers</a>
-            </Link>
+            </Link> */}
             <Link href="/contactus">
               <a className="footer__link">Contact Us</a>
             </Link>
-            <Link href="/best-worker-award">
+            {/* <Link href="/best-worker-award">
               <a className="footer__link">Best Worker Award</a>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

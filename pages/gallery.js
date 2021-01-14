@@ -7,7 +7,11 @@ const Gallery = () => {
     <div>
       <Head>
         <meta
-          description="See our gallery with a wide range of beautiful projects that we've done for our clients"
+          name="description"
+          content="See our gallery with a wide range of beautiful projects that we've done for our clients"
+        />
+        <meta
+          name="keyword"
           content="flooring company, flooring, floor, floor covering, lay out, house, renovation"
         />
         <title>Gallery - See Our beautiful projects</title>

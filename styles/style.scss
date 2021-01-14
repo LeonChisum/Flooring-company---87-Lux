@@ -73,59 +73,78 @@
   font-size: 15px;
 }
 
-// Hamburger menu
-.hamburger-menu {
+.mobile-container {
   display: none;
-  cursor: pointer;
 
-  &__line {
-    width: 2em;
-    height: 5px;
-    border-radius: 10px;
-    background-color: #000;
-
-    &:not(:last-child) {
-      margin-bottom: 0.3rem;
-    }
+  // Checkbox
+  .hamburger-menu-checkbox {
+    display: inline-block;
+    visibility: hidden;
+    opacity: 0;
   }
-}
 
-// Mobile menu
-.mobile-menu {
-  display: none;
-  flex-direction: column;
-  height: 100vh;
-  width: 50%;
-  background-color: #fff;
-  padding: 2em 0 0 1em;
-  position: absolute;
-  top: 95%;
-  right: 0;
-  z-index: -1;
-  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.048);
-  transition: all 0.4s ease-in-out;
-  transform: translate3d(100%, 0, 0);
-
-  &.active {
+  .hamburger-menu-checkbox:checked ~ .mobile-menu {
     transform: translate3d(0, 0, 0);
   }
 
-  &__link {
-    color: black;
-    font-weight: 600;
-    font-size: 14px;
+  // Hamburger menu
+  .hamburger-menu {
+    display: none;
 
-    &:not(:last-child) {
-      margin-bottom: 1.7em;
+    &__label {
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    &__line {
+      width: 2em;
+      height: 5px;
+      border-radius: 10px;
+      background-color: #000;
+
+      &:not(:last-child) {
+        margin-bottom: 0.3rem;
+      }
     }
   }
 
-  &__link--red {
-    background: rgb(250, 0, 30);
-    color: white;
-    width: 80%;
-    padding: 10px 25px;
-    font-size: $lg_paragraph;
+  // Mobile menu
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+    width: 50%;
+    background-color: #fff;
+    padding: 2em 0 0 1em;
+    position: absolute;
+    top: 95%;
+    right: 0;
+    z-index: -1;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.048);
+    transition: all 0.4s ease-in-out;
+    transform: translate3d(100%, 0, 0);
+
+    // &.active {
+
+    // }
+
+    &__link {
+      color: black;
+      font-weight: 600;
+      font-size: 14px;
+
+      &:not(:last-child) {
+        margin-bottom: 1.7em;
+      }
+    }
+
+    &__link--red {
+      background: rgb(250, 0, 30);
+      color: white;
+      width: 80%;
+      padding: 10px 25px;
+      font-size: $lg_paragraph;
+    }
   }
 }
 
@@ -923,7 +942,7 @@
     div {
       display: grid;
       grid-template-columns: 200px 200px;
-      grid-template-rows: 35px 35px 35px 35px;
+      grid-template-rows: 35px 35px 35px;
       grid-column-gap: 2%;
     }
   }

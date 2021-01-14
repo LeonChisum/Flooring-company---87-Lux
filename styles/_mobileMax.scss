@@ -23,15 +23,19 @@
         display: none;
       }
 
-      // Hamburger menu
-      .hamburger-menu {
+      .mobile-container {
         display: block;
-      }
-    }
 
-    // Mobile Menu
-    .mobile-menu {
-      display: flex;
+        // Hamburger menu
+        .hamburger-menu {
+          display: inline-block;
+        }
+
+        // Mobile Menu
+        .mobile-menu {
+          display: flex;
+        }
+      }
     }
   }
 
@@ -177,7 +181,7 @@
       display: flex;
       flex-direction: column;
       width: 90%;
-      margin: 0 auto 4em;
+      margin: 0 auto 2em;
       padding: 0;
 
       .footer__info {
@@ -214,10 +218,11 @@
     }
 
     &__extra-links {
-      padding-top: 3em;
+      padding-top: 2em;
 
       h2 {
         text-align: center;
+        padding-bottom: 30px;
       }
 
       div {
@@ -229,7 +234,7 @@
     &__copyright-section {
       display: block;
       text-align: center;
-      padding: 20px 0;
+      padding: 15px 0;
 
       .footer__icons {
         margin: 2em auto 0 auto;

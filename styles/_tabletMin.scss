@@ -27,11 +27,19 @@
       .hamburger-menu {
         display: block;
       }
-    }
+      .mobile-container {
+        display: block;
 
-    // Mobile Menu
-    .mobile-menu {
-      display: flex;
+        // Hamburger menu
+        .hamburger-menu {
+          display: inline-block;
+        }
+
+        // Mobile Menu
+        .mobile-menu {
+          display: flex;
+        }
+      }
     }
   }
 
