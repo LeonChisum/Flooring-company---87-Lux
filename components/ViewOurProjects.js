@@ -21,10 +21,10 @@ const ViewOurProjects = () => {
 							all the floor and wall tiles for a house renovation in Reigate this year.
 						</p>
 						<div className='project__buttons'>
-							<a href='#' className='blue__link'>
+							{/* <a href='#' className='blue__link'>
 								Case Study
-							</a>
-							<a href='#' className='red__button'>
+							</a> */}
+							<a href='/gallery' className='red__button'>
 								View Project
 							</a>
 						</div>
@@ -42,10 +42,10 @@ const ViewOurProjects = () => {
 							all the floor and wall tiles for a house renovation in Reigate this year.
 						</p>
 						<div className='project__buttons'>
-							<a href='#' className='blue__link'>
+							{/* <a href='#' className='blue__link'>
 								Case Study
-							</a>
-							<a href='#' className='red__button'>
+							</a> */}
+							<a href='/gallery' className='red__button'>
 								View Project
 							</a>
 						</div>

@@ -7,7 +7,7 @@ const Header = () => {
 			<div className='header__container'>
 				<h1>Trust the Professionals of the Industry.</h1>
 				<div>
-					<Link href='/aboutus'>
+					<Link href='#who__are__we'>
 						<a className='header__white__btn'>About Us</a>
 					</Link>
 					<Link href='/contactus'>

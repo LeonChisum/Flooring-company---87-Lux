@@ -15,10 +15,14 @@ export default function Home(props) {
 		<div>
 			<Head>
 				<meta
-					description='We pride in installing the highest quality, affordable, vinyl floor in the Tampa area.'
+					name='description'
+					content='We pride in installing the highest quality, affordable, vinyl flooring in the Tampa area.'
+				/>
+				<meta
+					name='keywords'
 					content='flooring company, flooring, floor, floor covering, lay out, house, renovation, quote, estimate'
 				/>
-				<title>Alexis Flooring - Affordable Floore Installations</title>
+				<title>Alexis Flooring - Affordable Floor Installations</title>
 			</Head>
 			<Header />
 			<WhyWorkWithUs />

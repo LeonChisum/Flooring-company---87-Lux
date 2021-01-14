@@ -45,7 +45,7 @@ const Footer = () => {
 						<Link href='/services'>
 							<a className='footer__link'>Services</a>
 						</Link>
-						<Link href='/about-us'>
+						<Link href='#who__are__we'>
 							<a className='footer__link'>About Us</a>
 						</Link>
 						<Link href='/careers'>
