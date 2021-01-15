@@ -14,8 +14,33 @@ const Gallery = () => {
           name="keyword"
           content="flooring company, flooring, floor, floor covering, lay out, house, renovation"
         />
+
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/img/favicon_package/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/img/favicon_package/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/img/favicon_package/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/img/favicon_package/site.webmanifest" />
+        <link
+          rel="mask-icon"
+          href="/img/favicon_package/safari-pinned-tab.svg"
+          color="#5bbad5"
+        />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
         <title>Gallery - See Our beautiful projects</title>
-        <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
 
       <section id="gallery">
@@ -31,77 +56,56 @@ const Gallery = () => {
           <div className="gallery-grid">
             {/* Gallery Box 1 */}
             <div className="gallery-grid__box-1 gallery-grid--box">
-              {/* <img className='gallery-grid__img-1' src='/img/project-image-1.png' alt='Vinyl Floor Installation' /> */}
               <div className="gallery-grid__info">Vinyl Floor Installation</div>
             </div>
 
             {/* Gallery Box 2 */}
             <div className="gallery-grid__box-2 gallery-grid--box">
-              {/* <img className='gallery-grid__img-1' src='/img/project-image-2.png' alt='Vinyl Floor Installation' /> */}
-
               <div className="gallery-grid__info">Vinyl Floor Installation</div>
             </div>
 
             {/* Gallery Box 3 */}
             <div className="gallery-grid__box-3 gallery-grid--box">
-              {/* <img className='gallery-grid__img-3' src='/img/project-image-3.png' alt='Vinyl Floor Installation' /> */}
-
               <div className="gallery-grid__info">Vinyl Floor Installation</div>
             </div>
 
             {/* Gallery Box 4 */}
             <div className="gallery-grid__box-4 gallery-grid--box">
-              {/* <img className='gallery-grid__img-4' src='/img/project-image-4.png' alt='Vinyl Floor Installation' /> */}
-
               <div className="gallery-grid__info">Vinyl Floor Installation</div>
             </div>
 
             {/* Gallery Box 5 */}
             <div className="gallery-grid__box-5 gallery-grid--box">
-              {/* <img className='gallery-grid__img-5' src='/img/project-image-5.png' alt='Vinyl Floor Installation' /> */}
-
               <div className="gallery-grid__info">Vinyl Floor Installation</div>
             </div>
 
             {/* Gallery Box 6 */}
             <div className="gallery-grid__box-6 gallery-grid--box">
-              {/* <img className='gallery-grid__img-6' src='/img/project-image-6.png' alt='Vinyl Floor Installation' /> */}
-
               <div className="gallery-grid__info">Vinyl Floor Installation</div>
             </div>
 
             {/* Gallery Box 7 */}
             <div className="gallery-grid__box-7 gallery-grid--box">
-              {/* <img className='gallery-grid__img-7' src='/img/project-image-7.png' alt='Vinyl Floor Installation' /> */}
-
               <div className="gallery-grid__info">Vinyl Floor Installation</div>
             </div>
 
             {/* Gallery Box 8 */}
             <div className="gallery-grid__box-8 gallery-grid--box">
-              {/* <img className='gallery-grid__img-8' src='/img/project-image-8.png' alt='Vinyl Floor Installation' /> */}
-
               <div className="gallery-grid__info">Vinyl Floor Installation</div>
             </div>
 
             {/* Gallery Box 9 */}
             <div className="gallery-grid__box-9 gallery-grid--box">
-              {/* <img className='gallery-grid__img-9' src='/img/project-image-9.png' alt='Vinyl Floor Installation' /> */}
-
               <div className="gallery-grid__info">Vinyl Floor Installation</div>
             </div>
 
             {/* Gallery Box 10 */}
             <div className="gallery-grid__box-10 gallery-grid--box">
-              {/* <img className='gallery-grid__img-10' src='/img/project-image-10.png' alt='Vinyl Floor Installation' /> */}
-
               <div className="gallery-grid__info">Vinyl Floor Installation</div>
             </div>
 
             {/* Gallery Box 11 */}
             <div className="gallery-grid__box-11 gallery-grid--box">
-              {/* <img className='gallery-grid__img-11' src='/img/project-image-11.png' alt='Vinyl Floor Installation' /> */}
-
               <div className="gallery-grid__info">Vinyl Floor Installation</div>
             </div>
           </div>

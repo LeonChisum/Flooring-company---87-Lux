@@ -45,7 +45,7 @@ const Navbar = () => {
             />
 
             <div className="hamburger-menu">
-              <label className="hamburger-menu__label" for="hamburger">
+              <label className="hamburger-menu__label" htmlFor="hamburger">
                 <div className="hamburger-menu__line"></div>
                 <div className="hamburger-menu__line"></div>
                 <div className="hamburger-menu__line"></div>

@@ -80,9 +80,35 @@ const Contact = () => {
     <div>
       <Head>
         <meta
-          description="Ready for a new floor? Contact us today for a quote."
-          content="flooring company, flooring, floor, floor covering, lay out, house, renovation, quote, estimate"
+          name="description"
+          content="Ready for a new floor? Contact us today for a quote."
         />
+
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/img/favicon_package/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/img/favicon_package/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/img/favicon_package/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/img/favicon_package/site.webmanifest" />
+        <link
+          rel="mask-icon"
+          href="/img/favicon_package/safari-pinned-tab.svg"
+          color="#5bbad5"
+        />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
         <title>Contact Us - Request A Quote</title>
       </Head>
       <div className="contact">
