@@ -68,13 +68,19 @@ const Contact = () => {
   };
 
   function showHideDiv(id) {
-    var e = document.getElementById(id);
-    if (e.style.display == null || e.style.display == "none") {
-      e.style.display = "block";
+    var x = document.getElementById(id).style;
+
+    if (x.display == null || x.display == "none") {
+      x.display = "block";
+      setExpand(true);
     } else {
-      e.style.display = "none";
+      x.display = "none";
+      setExpand(false);
     }
   }
+
+  // this changes the icon to the right of the FAQ when clicked
+  const [expand, setExpand] = useState(false);
 
   return (
     <div>
@@ -83,32 +89,6 @@ const Contact = () => {
           name="description"
           content="Ready for a new floor? Contact us today for a quote."
         />
-
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/img/favicon_package/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/img/favicon_package/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/img/favicon_package/favicon-16x16.png"
-        />
-        <link rel="manifest" href="/img/favicon_package/site.webmanifest" />
-        <link
-          rel="mask-icon"
-          href="/img/favicon_package/safari-pinned-tab.svg"
-          color="#5bbad5"
-        />
-        <meta name="msapplication-TileColor" content="#da532c" />
-        <meta name="theme-color" content="#ffffff" />
         <title>Contact Us - Request A Quote</title>
       </Head>
       <div className="contact">
@@ -175,12 +155,14 @@ const Contact = () => {
             >
               <h1>How does your pricing work?</h1>
               <IconContext.Provider value={{ color: "#B9B3B3" }}>
-                <div>
-                  <BsPlus />
-                </div>
+                <div>{expand ? <BiMinus /> : <BsPlus />}</div>
               </IconContext.Provider>
             </div>
-            <p id="answer1" className="faq__answers">
+            <p
+              id="answer1"
+              className="faq__answers"
+              style={{ display: "none" }}
+            >
               It depends on the type of Floor we install. For example, a
               Hardwood installation takes 2 days on Average. Get a Quote to know
               the approximate amount of time we take to finish the Floor
@@ -194,12 +176,14 @@ const Contact = () => {
             >
               <h1>How much time does it take to finish installing a Floor?</h1>
               <IconContext.Provider value={{ color: "#B9B3B3" }}>
-                <div>
-                  <BsPlus />
-                </div>
+                <div>{expand ? <BiMinus /> : <BsPlus />}</div>
               </IconContext.Provider>
             </div>
-            <p id="answer2" className="faq__answers">
+            <p
+              id="answer2"
+              className="faq__answers"
+              style={{ display: "none" }}
+            >
               It depends on the type of Floor we install. For example, a
               Hardwood installation takes 2 days on Average. Get a Quote to know
               the approximate amount of time we take to finish the Floor
@@ -213,12 +197,14 @@ const Contact = () => {
             >
               <h1>Do you provide After-sales service?</h1>
               <IconContext.Provider value={{ color: "#B9B3B3" }}>
-                <div>
-                  <BsPlus />
-                </div>
+                <div>{expand ? <BiMinus /> : <BsPlus />}</div>
               </IconContext.Provider>
             </div>
-            <p id="answer3" className="faq__answers">
+            <p
+              id="answer3"
+              className="faq__answers"
+              style={{ display: "none" }}
+            >
               It depends on the type of Floor we install. For example, a
               Hardwood installation takes 2 days on Average. Get a Quote to know
               the approximate amount of time we take to finish the Floor
