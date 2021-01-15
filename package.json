@@ -6,7 +6,8 @@
 		"format": "prettier --write \"{,!(.next)/**/}*.{js, jsx}\"",
 		"dev": "next dev",
 		"build": "next build",
-		"start": "next start"
+		"start": "next start",
+		"postbuild": "next-on-netlify"
 	},
 	"dependencies": {
 		"@sendgrid/mail": "^7.4.0",
