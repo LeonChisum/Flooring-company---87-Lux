@@ -1,126 +1,128 @@
 @media all and (max-width: 1024px) {
-  .container {
-    width: 90%;
-    margin: 0 auto;
-  }
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
 
-  /*********** Navbar Menu Style ***********/
+	/*********** Navbar Menu Style ***********/
 
-  .navbar__content {
-    width: 100%;
-    position: relative;
-    z-index: 1000;
+	.navbar__content {
+		width: 100%;
+		position: relative;
+		z-index: 1000;
 
-    .navbar {
-      .logo {
-        width: 14%;
-        img {
-          width: 100%;
-        }
-      }
+		.navbar {
+			.logo {
+				width: 14%;
+				img {
+					width: 100%;
+				}
+			}
 
-      // Navbar Links
-      .navbar__links {
-        display: flex;
-        width: 60%;
-      }
-    }
-  }
+			// Navbar Links
+			.navbar__links {
+				display: flex;
+				width: 60%;
+			}
+		}
+	}
 
-  // Landing page
+	// Landing page
 
-  .why__work__with__us > .company__info {
-    flex-direction: column;
-    align-items: center;
-  }
-  .header__container > h1 {
-    font-size: $lg_heading;
-  }
-  .header__white__btn {
-    padding: 10px 20px;
-  }
-  .header__red__btn {
-    padding: 10px 20px;
-  }
-  .why__work__with__us {
-    margin: 22% 0;
-  }
-  .services__we__offer > .services__header h2 {
-    font-size: 33px;
-    margin-bottom: 10px;
-  }
-  .services__we__offer > .service img {
-    display: none;
-  }
-  .view__our__projects .projects__header h1 {
-    text-align: center;
-  }
-  .view__our__projects > .projects .project:nth-child(odd) {
-    flex-direction: column;
-    margin-top: 35px;
-  }
-  .view__our__projects > .projects .project {
-    flex-direction: column;
-    margin-top: 35px;
-  }
+	.why__work__with__us > .company__info {
+		flex-direction: column;
+		align-items: center;
+	}
+	.header__container > h1 {
+		font-size: $lg_heading;
+	}
+	.header__white__btn {
+		padding: 10px 20px;
+	}
+	.header__red__btn {
+		padding: 10px 20px;
+	}
+	.why__work__with__us {
+		margin: 22% 0;
+	}
+	.services__we__offer > .services__header h2 {
+		font-size: 33px;
+		margin-bottom: 10px;
+	}
+	.services__we__offer > .service img {
+		display: none;
+	}
+	.view__our__projects .projects__header h1 {
+		text-align: center;
+	}
+	.view__our__projects > .projects .project:nth-child(odd) {
+		flex-direction: column;
+		margin-top: 35px;
+	}
+	.view__our__projects > .projects .project {
+		flex-direction: column;
+		margin-top: 35px;
+	}
 
-  /*********** Services Page Style ***********/
+	/*********** Services Page Style ***********/
 
-  .services {
-    &__header {
-      margin: 4em 0 4em 0;
-    }
+	.services {
+		&__header {
+			margin: 4em 0 4em 0;
+		}
 
-    &__example {
-      margin-bottom: 4em;
+		&__example {
+			margin-bottom: 4em;
 
-      &::before {
-        left: -16%;
-      }
+			&::before {
+				left: -16%;
+			}
 
-      img {
-        left: -6%;
-      }
-    }
-  }
+			img {
+				left: -6%;
+			}
+		}
+	}
 
-  /*********** Gallery Page Style ***********/
-  #gallery {
-    .gallery__container {
-      width: 100%;
-    }
-  }
+	/*********** Gallery Page Style ***********/
+	#gallery {
+		.gallery__container {
+			width: 100%;
+		}
+	}
 
-  // Contact page
-  .contact {
-    width: 100%;
-    padding: 0;
-    flex-direction: column;
+	// Contact page
+	.contact {
+		width: 100%;
+		padding: 0;
+		flex-direction: column;
 
-    &__hero-section {
-      width: 100%;
+		&__hero-section {
+			width: 100%;
 
-      h1 {
-        padding: 15% 0 40px 0;
-      }
+			h1 {
+				padding: 15% 0 40px 0;
+			}
 
-      p {
-        width: 65%;
-      }
-    }
-  }
-  .faq {
-    &__container {
-      width: 100%;
-    }
-  }
+			p {
+				width: 65%;
+			}
+		}
+	}
+	.faq {
+		margin-top: 15%;
 
-  /*********** Footer Style ***********/
-  .footer {
-    &__content {
-      padding-left: 0;
-      width: 90%;
-      margin: 0 auto;
-    }
-  }
+		&__container {
+			width: 100%;
+		}
+	}
+
+	/*********** Footer Style ***********/
+	.footer {
+		&__content {
+			padding-left: 0;
+			width: 90%;
+			margin: 0 auto;
+		}
+	}
 }
