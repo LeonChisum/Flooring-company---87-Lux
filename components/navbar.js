@@ -8,7 +8,8 @@ const Navbar = () => {
 	return (
 		<div className='navbar__content'>
 			<h3 className='navbar__announcment'>
-				Check out our new offers and new services <BsChevronRight className='announcment__arrow' />
+				<a href='/services'>Check out our new offers and new services </a>
+				<BsChevronRight className='announcment__arrow' />
 			</h3>
 			<div className='nav__container'>
 				<div className='navbar'>
