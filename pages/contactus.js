@@ -68,13 +68,19 @@ const Contact = () => {
 	};
 
 	function showHideDiv(id) {
-		var x = document.getElementById(id);
-		if (x.style.display == 'none') {
-			x.style.display = 'block';
+		var x = document.getElementById(id).style;
+
+		if (x.display == null || x.display == 'none') {
+			x.display = 'block';
+			setExpand(true);
 		} else {
-			x.style.display = 'none';
+			x.display = 'none';
+			setExpand(false);
 		}
 	}
+
+	// this changes the icon to the right of the FAQ when clicked
+	const [expand, setExpand] = useState(false);
 
 	return (
 		<div>
@@ -122,12 +128,10 @@ const Contact = () => {
 						<div className='faq__questions' onClick={() => showHideDiv('answer1')}>
 							<h1>How does your pricing work?</h1>
 							<IconContext.Provider value={{ color: '#B9B3B3' }}>
-								<div>
-									<BsPlus />
-								</div>
+								<div>{expand ? <BiMinus /> : <BsPlus />}</div>
 							</IconContext.Provider>
 						</div>
-						<p id='answer1' className='faq__answers'>
+						<p id='answer1' className='faq__answers' style={{ display: 'none' }}>
 							It depends on the type of Floor we install. For example, a Hardwood installation takes 2
 							days on Average. Get a Quote to know the approximate amount of time we take to finish the
 							Floor installation.
@@ -137,12 +141,10 @@ const Contact = () => {
 						<div className='faq__questions' onClick={() => showHideDiv('answer2')}>
 							<h1>How much time does it take to finish installing a Floor?</h1>
 							<IconContext.Provider value={{ color: '#B9B3B3' }}>
-								<div>
-									<BsPlus />
-								</div>
+								<div>{expand ? <BiMinus /> : <BsPlus />}</div>
 							</IconContext.Provider>
 						</div>
-						<p id='answer2' className='faq__answers'>
+						<p id='answer2' className='faq__answers' style={{ display: 'none' }}>
 							It depends on the type of Floor we install. For example, a Hardwood installation takes 2
 							days on Average. Get a Quote to know the approximate amount of time we take to finish the
 							Floor installation.
@@ -152,12 +154,10 @@ const Contact = () => {
 						<div className='faq__questions' onClick={() => showHideDiv('answer3')}>
 							<h1>Do you provide After-sales service?</h1>
 							<IconContext.Provider value={{ color: '#B9B3B3' }}>
-								<div>
-									<BsPlus />
-								</div>
+								<div>{expand ? <BiMinus /> : <BsPlus />}</div>
 							</IconContext.Provider>
 						</div>
-						<p id='answer3' className='faq__answers'>
+						<p id='answer3' className='faq__answers' style={{ display: 'none' }}>
 							It depends on the type of Floor we install. For example, a Hardwood installation takes 2
 							days on Average. Get a Quote to know the approximate amount of time we take to finish the
 							Floor installation.
