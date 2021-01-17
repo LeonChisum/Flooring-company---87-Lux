@@ -43,8 +43,10 @@ const Contact = () => {
       body: JSON.stringify(newContact),
     })
       .then((res) => {
-        const txt = res.text();
-        handleResponse(res.status, txt);
+        handleResponse(
+          res.status,
+          "Thanks For Your Interest, Please Allow Time For Our Response"
+        );
       })
       .catch((err) => console.log("Contact ERROR", err));
   };

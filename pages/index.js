@@ -2,12 +2,12 @@ import Image from "next/image";
 import Head from "next/head";
 
 import Header from "../components/header";
-import ServicesWeOffer from "../components/servicesWeOffer";
+import ServicesWeOffer from "../components/ServicesWeOffer";
 import Testomonials from "../components/Testomonials";
 import ViewOurProjects from "../components/ViewOurProjects";
 import WhatMore from "../components/WhatMore";
 import WhoAreWe from "../components/WhoAreWe";
-import WhyWorkWithUs from "../components/whyWorkWithUs";
+import WhyWorkWithUs from "../components/WhyWorkWithUs";
 
 import "../styles/style.scss";
 

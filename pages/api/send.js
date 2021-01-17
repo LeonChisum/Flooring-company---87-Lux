@@ -7,11 +7,11 @@ export default async function (req, res) {
 	const { email, message, name } = req.body;
 
 	const content = {
-		to: email,
+		to: 'testwebsitemoto@gmail.com',
 		from: 'testwebsitemoto@gmail.com',
-		subject: `New Message From - ${name}`,
+		subject: `New Message From - ${email}`,
 		text: message,
-		html: `<p>${message}</p>`,
+		html: `<p>${name} has sent you the following message : ${message}</p>`,
 	};
 
 	try {
