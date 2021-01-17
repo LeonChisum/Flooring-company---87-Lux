@@ -1,3 +1,4 @@
+import Image from "next/image";
 import "../styles/style.scss";
 import Head from "next/head";
 import { useState } from "react";
@@ -89,23 +90,27 @@ const Contact = () => {
           name="description"
           content="Ready for a new floor? Contact us today for a quote."
         />
+        <meta
+          name="keywords"
+          content="flooring company, flooring, floor, floor covering, lay out, house, renovation"
+        />
 
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/favicon_package/apple-touch-icon.png"
+          href="/favicon_package/apple-touch-icon.ico"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/favicon_package/favicon-32x32.png"
+          href="/favicon_package/favicon-32x32.ico"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/favicon_package/favicon-16x16.png"
+          href="/favicon_package/favicon-16x16.ico"
         />
         <link rel="manifest" href="/favicon_package/site.webmanifest" />
         <link

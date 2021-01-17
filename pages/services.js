@@ -1,3 +1,4 @@
+import Image from "next/image";
 import "../styles/style.scss";
 import Head from "next/head";
 import { BsChevronRight } from "react-icons/bs";
@@ -18,19 +19,19 @@ const Services = () => {
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/favicon_package/apple-touch-icon.png"
+          href="/favicon_package/apple-touch-icon.ico"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/favicon_package/favicon-32x32.png"
+          href="/favicon_package/favicon-32x32.ico"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/favicon_package/favicon-16x16.png"
+          href="/favicon_package/favicon-16x16.ico"
         />
         <link rel="manifest" href="/favicon_package/site.webmanifest" />
         <link
@@ -54,7 +55,15 @@ const Services = () => {
           </p>
         </div>
         <section className="services__example">
-          <img src="/img/vinyl-floor.png"></img>
+          <Image
+            className="img"
+            src="/img/vinyl-floor.jpg"
+            alt="Dinning room with beatifull Vinyl Floor"
+            width={1000}
+            height={1800}
+            quality={100}
+          />
+
           <div className="services__example__info">
             <h1>Luxury Vinyl</h1>
             <p>

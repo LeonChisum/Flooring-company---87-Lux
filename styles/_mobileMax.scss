@@ -1,7 +1,7 @@
 @media all and (max-width: 600px) {
-  #__next {
-    overflow-x: hidden;
-  }
+  //   #__next {
+  //     overflow-x: hidden;
+  //   }
 
   /*********** Navbar Menu Style ***********/
 
@@ -15,6 +15,7 @@
         width: 28%;
         img {
           width: 100%;
+          background-position: left bottom;
         }
       }
 
@@ -111,11 +112,11 @@
         position: static;
       }
 
-      img {
+      .img {
         width: 100%;
         position: static;
         z-index: 0;
-        margin-bottom: 4em;
+        margin-bottom: 4em !important;
       }
 
       .services__example__info {

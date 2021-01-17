@@ -3,7 +3,7 @@ import React from "react";
 const WhyWorkWithUs = () => {
   return (
     <div className="why__work__with__us">
-      <h3>Why work with Us?</h3>
+      <h1>Why work with Us?</h1>
       <hr className="red__underline" />
       <div className="company__info">
         <div className="customers">
