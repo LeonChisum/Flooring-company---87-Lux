@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { FiTwitter, FiFacebook, FiYoutube } from "react-icons/fi";
@@ -11,7 +12,14 @@ const Footer = () => {
       <div className="footer__content">
         <div className="footer__info">
           <div className="footer__logo">
-            <img src="../img/blueLogo.png" alt="Blue Logo" />
+            <Image
+              className="img"
+              src="/img/BlueLogo.png"
+              alt="Blue Logo"
+              width={140}
+              height={140}
+              quality={100}
+            />
           </div>
 
           <div className="footer__contact-info">
