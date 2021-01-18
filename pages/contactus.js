@@ -43,6 +43,11 @@ const Contact = () => {
 			body: JSON.stringify(newContact),
 		})
 			.then((res) => {
+				setNewContact({
+					name: '',
+					email: '',
+					message: '',
+				});
 				handleResponse(res.status, 'Thanks For Your Interest, Please Allow Time For Our Response');
 			})
 			.catch((err) => console.log('Contact ERROR', err));
@@ -54,11 +59,6 @@ const Contact = () => {
 				submitted: true,
 				submitting: false,
 				info: { error: false, msg: msg },
-			});
-			setNewContact({
-				name: '',
-				email: '',
-				message: '',
 			});
 		} else {
 			setStatus({
@@ -118,20 +118,34 @@ const Contact = () => {
 							className='contact__form'
 							name='Alexis Flooring Contact Inqueries'
 							method='post'
-							onSubmit={handleSubmit}
-							data-netlify='true'>
-							<input type='hidden' name='form-name' value='Alexis Flooring Contact Inqueries' />
-							<input type='text' name='name' placeholder='Name' onChange={handleChange}></input>
-							<input type='email' name='email' placeholder='Email' onChange={handleChange}></input>
+							onSubmit={handleSubmit}>
+							<input
+								type='text'
+								name='name'
+								value={newContact.name}
+								placeholder='Name'
+								onChange={handleChange}></input>
+							<input
+								type='email'
+								name='email'
+								value={newContact.email}
+								placeholder='Email'
+								onChange={handleChange}></input>
 							<textarea
 								type='text'
 								name='message'
+								value={newContact.message}
 								placeholder='Message'
 								onChange={handleChange}></textarea>
 							<button type='submit' onClick={handleSubmit} disabled={status.submitting}>
 								{!status.submitting ? (!status.submitted ? 'Submit' : 'Submitted') : 'Submitting...'}
 							</button>
 						</form>
+						{status.info.error ? (
+							<div className='error'>Error: {status.info.msg}</div>
+						) : (
+							<div className='success'>{status.info.msg}</div>
+						)}
 					</div>
 				</div>
 			</div>
