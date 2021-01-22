@@ -12,14 +12,16 @@ const Footer = () => {
 			<div className='footer__content'>
 				<div className='footer__info'>
 					<div className='footer__logo'>
-						<Image
-							className='img'
-							src='/img/BlueLogo.png'
-							alt='Blue Logo'
-							width={140}
-							height={140}
-							quality={100}
-						/>
+						<Link href='/'>
+							<Image
+								className='img'
+								src='/img/BlueLogo.png'
+								alt='Blue Logo'
+								width={140}
+								height={140}
+								quality={100}
+							/>
+						</Link>
 					</div>
 
 					<div className='footer__contact-info'>
@@ -55,7 +57,7 @@ const Footer = () => {
 						<Link href='/services'>
 							<a className='footer__link'>Services</a>
 						</Link>
-						<Link href='/about-us'>
+						<Link href='/#who__are__we'>
 							<a className='footer__link'>About Us</a>
 						</Link>
 						{/* <Link href="/careers">
