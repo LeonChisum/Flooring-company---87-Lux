@@ -15,21 +15,30 @@ class Navbar extends Component {
   render() {
     return (
       <div className="navbar__content">
-        <h3 className="navbar__announcment">
-          Check out our new offers and new services{" "}
-          <BsChevronRight className="announcment__arrow" />
-        </h3>
+        <Link href="/services">
+          <a>
+            <h3 className="navbar__announcment">
+              Check out our new offers and new services{" "}
+              <BsChevronRight className="announcment__arrow" />
+            </h3>
+          </a>
+        </Link>
+
         <div className="nav__container">
           <div className="navbar">
             <div className="logo">
-              <Image
-                className="img"
-                src="/img/whiteLogo.png"
-                alt="White Logo"
-                width={140}
-                height={140}
-                quality={100}
-              />
+              <Link href="/">
+                <a>
+                  <Image
+                    className="img"
+                    src="/img/whiteLogo.png"
+                    alt="White Logo"
+                    width={140}
+                    height={140}
+                    quality={100}
+                  />
+                </a>
+              </Link>
             </div>
 
             <div className="navbar__links">

@@ -1,0 +1,234 @@
+/************** Gallery Page Styles *****************/
+
+#gallery {
+  padding: 5em 0;
+
+  .gallery__container {
+    width: 75%;
+    margin: 0 auto;
+
+    .gallery__title {
+      text-align: center;
+      font-size: $lg_heading;
+      font-family: "Avenir Next", sans-serif;
+      color: #080036;
+      margin-bottom: 1em;
+    }
+
+    .gallery__p {
+      text-align: center;
+      font-size: $lg_paragraph;
+      color: #3d3d3d;
+      line-height: 2.5rem;
+      margin-bottom: 4em;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 300px 300px 200px 200px 400px 200px;
+      grid-gap: 1em;
+
+      &--box {
+        position: relative;
+        transition: all 0.6s ease-in-out;
+
+        .img {
+          object-fit: cover;
+        }
+
+        &:hover {
+          .gallery-grid__info {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+
+        .gallery-grid__info {
+          position: absolute;
+          width: 100%;
+          padding: 1em 0 1em 1em;
+          color: #fff;
+          z-index: 1;
+          bottom: 0;
+          background: rgba(8, 0, 54, 0.42);
+          visibility: hidden;
+          opacity: 0;
+        }
+      }
+
+      &__box-1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+      }
+
+      &__box-2 {
+        grid-column: 2 / 5;
+        grid-row: 1 / 2;
+      }
+
+      &__box-3 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+      }
+
+      &__box-4 {
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+      }
+
+      &__box-5 {
+        grid-column: 4 / 5;
+        grid-row: 2 / 4;
+      }
+
+      &__box-6 {
+        grid-column: 1 / 4;
+        grid-row: 3 / 5;
+      }
+
+      &__box-7 {
+        grid-column: 4 / 5;
+        grid-row: 4 / 5;
+      }
+
+      &__box-8 {
+        grid-column: 1 / 2;
+        grid-row: 5 / 7;
+      }
+
+      &__box-9 {
+        grid-column: 2 / 4;
+        grid-row: 5 / 6;
+      }
+
+      &__box-10 {
+        grid-column: 2 / 5;
+        grid-row: 6 / 7;
+      }
+
+      &__box-11 {
+        grid-column: 4 / 5;
+        grid-row: 5 / 6;
+      }
+    }
+  }
+}
+
+/************************************************************************ MEDIA QUERIES ************************************************************************/
+
+/**************************** Tablet Max ***/
+
+@media all and (max-width: 1024px) {
+  #gallery {
+    .gallery__container {
+      width: 100%;
+    }
+  }
+}
+
+/**************************** Tablet Min ***/
+
+@media all and (max-width: 768px) {
+  #gallery {
+    .gallery__container {
+      width: 100%;
+    }
+  }
+}
+
+/**************************** Mobile Max ***/
+
+@media all and (max-width: 600px) {
+  #gallery {
+    .gallery__container {
+      width: 100%;
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 300px 300px 300px 700px 300px 300px 600px 300px 300px 500px;
+        grid-gap: 2em;
+
+        &--box {
+          position: relative;
+          transition: all 0.6s ease-in-out;
+
+          &:hover {
+            .gallery-grid__info {
+              visibility: visible;
+              opacity: 1;
+            }
+          }
+
+          .gallery-grid__info {
+            position: absolute;
+            width: 100%;
+            padding: 1em 0 1em 1em;
+            color: #fff;
+            z-index: 1;
+            bottom: 0;
+            background: rgba(8, 0, 54, 0.42);
+            visibility: hidden;
+            opacity: 0;
+          }
+        }
+
+        &__box-1 {
+          grid-column: 1 / 1;
+          grid-row: 1 / 2;
+        }
+
+        &__box-2 {
+          grid-column: 1 / 1;
+          grid-row: 2 / 3;
+        }
+
+        &__box-3 {
+          grid-column: 1 / 1;
+          grid-row: 3 / 4;
+        }
+
+        &__box-4 {
+          grid-column: 1 / 1;
+          grid-row: 4 / 5;
+        }
+
+        &__box-5 {
+          grid-column: 1 / 1;
+          grid-row: 5 / 6;
+        }
+
+        &__box-6 {
+          grid-column: 1 / 1;
+          grid-row: 6 / 7;
+        }
+
+        &__box-7 {
+          grid-column: 1 / 1;
+          grid-row: 7 / 8;
+        }
+
+        &__box-8 {
+          grid-column: 1 / 2;
+          grid-row: 8 / 9;
+        }
+
+        &__box-9 {
+          grid-column: 1 / 1;
+          grid-row: 9 / 10;
+        }
+
+        &__box-10 {
+          grid-column: 1 / 1;
+          grid-row: 10 / 11;
+        }
+
+        &__box-11 {
+          grid-column: 1 / 1;
+          grid-row: 11 / 12;
+        }
+      }
+    }
+  }
+}

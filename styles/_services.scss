@@ -1,0 +1,184 @@
+/************** services Page Styles *****************/
+
+.services {
+  margin-top: 5%;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font-size: $lg_heading;
+      color: $secondary-color;
+      font-weight: 600;
+      margin-bottom: 2%;
+    }
+
+    p {
+      font-size: $lg_paragraph;
+      line-height: $line_height;
+      width: 50%;
+      text-align: center;
+      margin-bottom: 10%;
+    }
+  }
+  &__example {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+
+    &::before {
+      content: "";
+      height: 140%;
+      width: 35%;
+      position: absolute;
+      top: -20%;
+      left: -6%;
+      background: $primary-color;
+      z-index: 0;
+    }
+
+    img {
+      position: relative;
+      width: 40%;
+      z-index: 1;
+    }
+
+    &__info {
+      padding-left: 14%;
+      margin-top: -10%;
+
+      h1 {
+        font-size: $lg_heading;
+        color: $secondary-color;
+        font-weight: 600;
+        margin-bottom: 4%;
+      }
+
+      p {
+        font-size: $lg_paragraph;
+        line-height: $line_height;
+        margin-bottom: 4%;
+      }
+
+      a {
+        text-decoration: none;
+        color: #080036;
+        display: flex;
+
+        svg {
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+  &__description {
+    margin-top: 14%;
+    padding-left: 5%;
+    margin-bottom: 10%;
+
+    p {
+      line-height: $line_height;
+      font-size: $lg_paragraph;
+      width: 70%;
+      margin-bottom: 2%;
+    }
+  }
+}
+
+/************************************************************************ MEDIA QUERIES ************************************************************************/
+
+/**************************** Tablet Max ***/
+
+@media all and (max-width: 1024px) {
+  .services {
+    &__header {
+      margin: 4em 0 4em 0;
+    }
+
+    &__example {
+      margin-bottom: 4em;
+
+      &::before {
+        left: -16%;
+      }
+
+      img {
+        left: -6%;
+      }
+    }
+  }
+}
+
+/**************************** Tablet Min ***/
+
+@media all and (max-width: 768px) {
+  .services {
+    &__header {
+      margin: 4em 0 4em 0;
+
+      p {
+        width: 100%;
+      }
+    }
+
+    &__example {
+      margin-bottom: 4em;
+    }
+
+    &__description {
+      padding: 0;
+      p {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/**************************** Mobile Max ***/
+
+@media all and (max-width: 600px) {
+  .services {
+    &__header {
+      margin: 4em 0 4em 0;
+
+      p {
+        width: 100%;
+      }
+    }
+
+    &__example {
+      display: block;
+      margin-bottom: 4em;
+      width: 100%;
+
+      &::before {
+        position: static;
+      }
+
+      .img {
+        width: 100%;
+        position: static;
+        z-index: 0;
+        margin-bottom: 4em !important;
+      }
+
+      .services__example__info {
+        padding: 0;
+        margin-top: 0;
+      }
+    }
+
+    &__description {
+      padding: 0;
+      p {
+        width: 100%;
+      }
+    }
+  }
+}
